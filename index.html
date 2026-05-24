@@ -1,96 +1,1634 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AllUp | Facility Management & Pulizie Professionali Roma</title>
+<meta name="description" content="Facility Management integrato a Roma: pulizie professionali, sanificazione ozono, portierato, disinfestazione. Certificati ISO 9001 e HACCP. Preventivo gratuito 24h.">
+<meta name="keywords" content="facility management roma, pulizie professionali roma, impresa pulizie roma, sanificazione uffici roma, pulizie civili industriali roma">
+<meta name="robots" content="index, follow">
+<meta name="author" content="AllUp S.r.l.">
+<meta name="geo.region" content="IT-RM">
+<meta name="geo.placename" content="Roma">
+<meta name="geo.position" content="41.8818;12.5191">
+<meta name="ICBM" content="41.8818, 12.5191">
+<link rel="canonical" href="https://www.allupsrl.it/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.allupsrl.it/">
+<meta property="og:title" content="AllUp | Facility Management & Pulizie Professionali Roma">
+<meta property="og:description" content="Facility Management integrato a Roma: pulizie professionali, sanificazione ozono, portierato, disinfestazione. Certificati ISO 9001 e HACCP. Preventivo gratuito 24h.">
+<meta property="og:site_name" content="AllUp S.r.l.">
+<meta property="og:locale" content="it_IT">
+<meta property="og:image" content="https://www.allupsrl.it/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AllUp | Facility Management & Pulizie Professionali Roma">
+<meta name="twitter:description" content="Facility Management integrato a Roma: pulizie professionali, sanificazione ozono, portierato, disinfestazione. Certificati ISO 9001 e HACCP. Preventivo gratuito 24h.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="style.css">
+<style>
+/* ─── HOME-SPECIFIC ─── */
+.hero {
+  min-height: 100vh;
+  background: var(--dark);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.hero-bg-lines {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(-55deg, rgba(255,255,255,.014) 0, rgba(255,255,255,.014) 1px, transparent 1px, transparent 42px);
+}
+.hero-accent {
+  position: absolute;
+  top: 0; right: 0;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(224,94,40,.04) 0%, rgba(224,94,40,.12) 100%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.hero-body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.hero-inner {
+  position: relative; z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+  max-width: 860px;
+  padding: 3rem 0 2rem;
+}
+.hero-content {
+  position: relative; z-index: 1;
+}
+.hero-visual {
+  position: relative;
+}
+.hero-img-wrap {
+  position: relative;
+  border-radius: var(--radius-l);
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: linear-gradient(145deg, rgba(224,94,40,.15) 0%, rgba(26,26,26,.8) 100%);
+}
+.hero-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-img-badge {
+  position: absolute;
+  bottom: 1.5rem; left: 1.5rem;
+  background: rgba(26,26,26,.92);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,.1);
+  color: var(--white);
+  padding: .85rem 1.2rem;
+  border-radius: var(--radius-m);
+  display: flex; align-items: center; gap: .7rem;
+  font-size: .8rem; font-weight: 600; letter-spacing: .2px;
+}
+.hero-img-badge-dot {
+  width: 8px; height: 8px;
+  background: #4ade80;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba(74,222,128,.25);
+  animation: pulse-green 2s ease infinite;
+}
+.hero-img-deco {
+  position: absolute;
+  top: -1.2rem; right: -1.2rem;
+  width: 80px; height: 80px;
+  background: var(--orange);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 8px 32px rgba(224,94,40,.4);
+}
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(74,222,128,.25); }
+  50%       { box-shadow: 0 0 0 6px rgba(74,222,128,.1); }
+}
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero-visual { display: none; }
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: .6rem;
+  color: var(--orange);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+}
+.hero-eyebrow::before { content: ''; width: 26px; height: 2px; background: var(--orange); flex-shrink: 0; }
+.hero-h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 1.4rem;
+  letter-spacing: -.5px;
+}
+.hero-h1 em { font-style: italic; color: var(--orange); }
+.hero-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.58);
+  line-height: 1.8;
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+}
+.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.hero-stats-bar {
+  position: relative; z-index: 1;
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding: 2rem 0;
+}
+.hero-stats-inner {
+  display: flex; align-items: stretch;
+}
+.h-stat { flex: 1; padding: 0.5rem 2.5rem; border-right: 1px solid rgba(255,255,255,.08); }
+.h-stat:first-child { padding-left: 0; }
+.h-stat:last-child { border-right: none; }
+.h-stat-n {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--orange);
+  display: block; line-height: 1;
+  margin-bottom: .35rem;
+}
+.h-stat-l { font-size: .76rem; color: rgba(255,255,255,.4); font-weight: 500; letter-spacing: .3px; }
+
+/* ─── Intro ─── */
+.intro-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: linear-gradient(145deg, #CECCC8, #AEACA8);
+  border-radius: var(--radius-l);
+  position: relative;
+  overflow: hidden;
+  display: flex; align-items: flex-end;
+}
+.intro-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.intro-img::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(to top, rgba(0,0,0,.55) 0%, transparent 60%);
+}
+.intro-img-badge { position: relative; z-index: 2; }
+.intro-img-badge {
+  position: relative; z-index: 1;
+  background: var(--dark);
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .3px;
+  margin: 1rem;
+  border-radius: var(--radius-m);
+  display: flex; align-items: center; gap: .6rem;
+}
+.intro-img-badge span { color: var(--orange); }
+.intro-feats { display: flex; flex-direction: column; gap: 1.4rem; margin: 1.8rem 0 2.2rem; }
+
+/* ─── Service cards ─── */
+.srv-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  overflow: hidden;
+  transition: transform var(--ease), box-shadow var(--ease);
+  display: flex; flex-direction: column;
+}
+.srv-card:hover { transform: translateY(-6px); box-shadow: var(--sh-h); }
+.srv-card-img {
+  height: 220px;
+  position: relative; overflow: hidden;
+}
+.srv-card-img-inner {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3rem;
+  position: relative;
+}
+.srv-card-img-inner::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(90deg, transparent, transparent 30px, rgba(255,255,255,.04) 30px, rgba(255,255,255,.04) 31px),
+              repeating-linear-gradient(0deg, transparent, transparent 30px, rgba(255,255,255,.04) 30px, rgba(255,255,255,.04) 31px);
+}
+.srv-card-img-inner span { position: relative; z-index: 1; }
+.card-privati  { background: linear-gradient(135deg, #2C4A3E, #1A3A30); }
+.card-aziende  { background: linear-gradient(135deg, #2A3A4A, #1A2A3A); }
+.card-speciali { background: linear-gradient(135deg, #3A2A1A, #2A1A0A); }
+.srv-card-body { padding: 2rem; flex: 1; display: flex; flex-direction: column; }
+.srv-card-tag { font-size: .68rem; font-weight: 700; color: var(--orange); letter-spacing: 2px; text-transform: uppercase; margin-bottom: .6rem; }
+.srv-card-title { font-family: 'Montserrat', sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--dark); margin-bottom: .7rem; }
+.srv-card-text { font-size: .875rem; color: var(--gray); line-height: 1.72; flex: 1; margin-bottom: 1.4rem; }
+
+/* ─── Stats strip ─── */
+.stats-strip {
+  background: var(--orange);
+  padding: 3rem 0;
+}
+.stats-inner {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 1rem; text-align: center;
+}
+.st-item { padding: 0 1rem; }
+.st-n {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem; font-weight: 700; color: var(--white);
+  display: block; line-height: 1; margin-bottom: .4rem;
+}
+.st-l { font-size: .76rem; color: rgba(255,255,255,.78); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+
+/* ─── Why us ─── */
+.why-feats { display: flex; flex-direction: column; gap: 2rem; }
+
+/* ─── Reviews ─── */
+.reviews-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.8rem; }
+
+/* ─── Certs ─── */
+.certs-row { display: flex; align-items: center; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
+.cert-item { text-align: center; }
+.cert-item img { width: 80px; height: auto; object-fit: contain; display: block; margin: 0 auto .6rem; transition: transform .3s ease; }
+.cert-item img:hover { transform: scale(1.06); }
+.cert-icon { font-size: 2.2rem; margin-bottom: .5rem; display: block; }
+.cert-name { font-size: .72rem; font-weight: 700; color: var(--gray); letter-spacing: 1px; text-transform: uppercase; }
+
+@media (max-width: 900px) {
+  .reviews-grid { grid-template-columns: 1fr; }
+  .stats-inner { grid-template-columns: 1fr 1fr; }
+  .hero-stats-inner { flex-wrap: wrap; }
+  .h-stat { flex: 1 1 45%; border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); }
+}
+@media (max-width: 600px) {
+  .certs-row { gap: 2rem; }
+  .stats-inner { grid-template-columns: 1fr 1fr; }
+}
+
+/* ─── Service List ─── */
+.srv-list { margin-top: 5rem; }
+.srv-list-item {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  align-items: center;
+  gap: 1.5rem 2rem;
+  padding: 2.4rem 1.8rem;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  border-radius: var(--radius-m);
+  transition: background var(--ease), transform var(--ease);
+}
+.srv-list-item:first-child { border-top: 1px solid var(--border); }
+.srv-list-item:hover { background: var(--off); transform: translateX(4px); }
+.srv-list-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--orange);
+  opacity: .2;
+  line-height: 1;
+  user-select: none;
+}
+.srv-list-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: .7rem;
+  transition: color var(--ease);
+}
+.srv-list-item:hover .srv-list-title { color: var(--orange); }
+.srv-list-text { font-size: .875rem; color: var(--gray); line-height: 1.62; }
+.srv-list-btn {
+  display: flex; align-items: center; gap: .45rem;
+  background: none;
+  border: 1.5px solid var(--border);
+  padding: .55rem 1.1rem;
+  border-radius: 50px;
+  font-size: .78rem; font-weight: 600;
+  color: var(--dark);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--ease);
+  flex-shrink: 0;
+}
+.srv-list-btn:hover,
+.srv-list-item:hover .srv-list-btn { border-color: var(--orange); color: var(--orange); }
+
+/* ─── Modal ─── */
+.srv-modal-overlay {
+  position: fixed; inset: 0; z-index: 1100;
+  background: rgba(10,10,10,.65);
+  backdrop-filter: blur(5px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 1rem;
+  opacity: 0; pointer-events: none;
+  transition: opacity .22s ease;
+}
+.srv-modal-overlay.open { opacity: 1; pointer-events: all; }
+.srv-modal {
+  background: var(--white);
+  border-radius: var(--radius-l);
+  max-width: 660px; width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2.8rem;
+  position: relative;
+  transform: translateY(24px) scale(.98);
+  transition: transform .22s ease;
+}
+.srv-modal-overlay.open .srv-modal { transform: translateY(0) scale(1); }
+.srv-modal-close {
+  position: absolute; top: 1.1rem; right: 1.1rem;
+  width: 34px; height: 34px;
+  background: var(--off); border: 1px solid var(--border); border-radius: 50%;
+  font-size: .95rem; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--dark);
+  transition: background var(--ease);
+}
+.srv-modal-close:hover { background: var(--border); }
+.srv-modal-tag { font-size: .68rem; font-weight: 700; color: var(--orange); letter-spacing: 2px; text-transform: uppercase; margin-bottom: .5rem; }
+.srv-modal-title { font-family: 'Montserrat', sans-serif; font-size: 1.55rem; font-weight: 700; color: var(--dark); margin-bottom: 1rem; line-height: 1.2; }
+.srv-modal-divider { height: 2px; width: 40px; background: var(--orange); border-radius: 2px; margin-bottom: 1.2rem; }
+.srv-modal-lead { font-size: .93rem; color: var(--gray); line-height: 1.78; margin-bottom: 1.2rem; }
+.srv-modal-bullets-title { font-size: .72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: .8rem; }
+.srv-modal-bullets { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem .8rem; margin-bottom: 2rem; }
+.srv-modal-bullet {
+  display: flex; align-items: flex-start; gap: .5rem;
+  font-size: .855rem; color: var(--dark); line-height: 1.45;
+}
+.srv-modal-bullet::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--orange); border-radius: 50%;
+  margin-top: .35em; flex-shrink: 0;
+}
+.srv-modal-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+/* ─── List wrap + fade ─── */
+.srv-list-wrap {
+  position: relative;
+  overflow: hidden;
+  max-height: 36rem;
+  transition: max-height .5s ease;
+}
+.srv-list-wrap.expanded {
+  max-height: 200rem;
+}
+.srv-list-fade {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 13rem;
+  background: linear-gradient(to bottom, transparent 0%, #fff 65%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  transition: opacity .3s ease;
+}
+.srv-list-wrap.expanded .srv-list-fade {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .srv-list-item { grid-template-columns: 48px 1fr; }
+  .srv-list-btn { display: none; }
+  .srv-list-num { font-size: 1.8rem; }
+  .srv-modal { padding: 1.8rem 1.4rem; }
+  .srv-modal-bullets { grid-template-columns: 1fr; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "CleaningService"
+      ],
+      "@id": "https://www.allupsrl.it/#business",
+      "name": "AllUp S.r.l.",
+      "legalName": "AllUp S.r.l.",
+      "description": "Facility Management integrato a Roma: pulizie professionali, sanificazione a ozono, disinfestazione, portierato, lavanolo e manutenzione del verde.",
+      "url": "https://www.allupsrl.it",
+      "telephone": "+390670496958",
+      "email": "amministrazione@allupsrl.it",
+      "foundingDate": "2015",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Lusitania, 4",
+        "addressLocality": "Roma",
+        "addressRegion": "RM",
+        "postalCode": "00183",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "41.8818",
+        "longitude": "12.5191"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Roma"
+        },
+        {
+          "@type": "State",
+          "name": "Lazio"
+        }
+      ],
+      "priceRange": "€€",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servizi Facility Management Roma",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sanificazione a Ozono Roma",
+              "provider": {
+                "@id": "https://www.allupsrl.it/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pulizie Civili e Industriali Roma"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Disinfestazione e Derattizzazione Roma"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Facchinaggio Roma"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Portierato e Reception Roma"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Lavanolo Roma"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Manutenzione del Verde Roma"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.facebook.com/allupsrl",
+        "https://www.instagram.com/allupsrl",
+        "https://www.linkedin.com/company/allup-srl"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.allupsrl.it/#website",
+      "url": "https://www.allupsrl.it",
+      "name": "AllUp - Facility Management Roma",
+      "publisher": {
+        "@id": "https://www.allupsrl.it/#business"
+      },
+      "inLanguage": "it-IT",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.allupsrl.it/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <a href="tel:+390670496958" class="topbar-item">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +39 0670496958
+      </a>
+      <a href="mailto:amministrazione@allupsrl.it" class="topbar-item">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        amministrazione@allupsrl.it
+      </a>
+    </div>
+    <div class="topbar-right">
+      <a href="#" class="topbar-soc" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+      <div class="topbar-divider"></div>
+      <a href="#" class="topbar-soc" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <div class="topbar-divider"></div>
+      <a href="#" class="topbar-soc" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container nav-inner">
+    <a href="index.html" class="site-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L13.09 8.26L19 6L15.45 11.25L21 13.5L15.36 14.9L17 21L12 17.27L7 21L8.64 14.9L3 13.5L8.55 11.25L5 6L10.91 8.26L12 2Z"/></svg>
+      </div>
+      <div class="logo-text-wrap">
+        <span class="logo-name">All<em>Up</em></span>
+        <span class="logo-sub">Facility Management</span>
+      </div>
+    </a>
+
+    <nav class="nav-menu">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link active">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="chi-siamo.html" class="nav-link">
+          Chi Siamo
+          <svg class="nav-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="chi-siamo.html#mission" class="dd-item">Mission &amp; Valori</a>
+          <a href="chi-siamo.html#storia" class="dd-item">La Nostra Storia</a>
+          <a href="chi-siamo.html#team" class="dd-item">Il Team</a>
+          <div class="dd-sep"></div>
+          <a href="chi-siamo.html#certificazioni" class="dd-item">Certificazioni</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="servizi.html" class="nav-link">
+          Servizi
+          <svg class="nav-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="servizi.html#sanificazione" class="dd-item">Sanificazione a Ozono</a>
+          <a href="servizi.html#pulizie" class="dd-item">Pulizie Civili ed Industriali</a>
+          <a href="servizi.html#disinfestazione" class="dd-item">Disinfestazione e Derattizzazione</a>
+          <div class="dd-sep"></div>
+          <a href="servizi.html#facchinaggio" class="dd-item">Facchinaggio</a>
+          <a href="servizi.html#portierato" class="dd-item">Portierato e Reception</a>
+          <a href="servizi.html#lavanolo" class="dd-item">Servizi di Lavanolo</a>
+          <a href="servizi.html#verde" class="dd-item">Manutenzione del Verde</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="blog.html" class="nav-link">Blog</a>
+      </div>
+      <div class="nav-item">
+        <a href="preventivo.html" class="nav-link">Preventivo</a>
+      </div>
+      <div class="nav-item">
+        <a href="lavora-con-noi.html" class="nav-link">Lavora con Noi</a>
+      </div>
+    </nav>
+
+    <a href="contatti.html" class="nav-btn">Contatti</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- MOBILE DRAWER -->
+<nav class="mob-drawer" id="mobDrawer">
+  <a href="index.html" class="mob-link">Home</a>
+  <a href="chi-siamo.html" class="mob-link">Chi Siamo</a>
+  <a href="servizi.html" class="mob-link">Servizi</a>
+  <a href="blog.html" class="mob-link">Blog</a>
+  <a href="preventivo.html" class="mob-link">Preventivo</a>
+  <a href="lavora-con-noi.html" class="mob-link">Lavora con Noi</a>
+  <a href="contatti.html" class="mob-link cta-mob">Contatti →</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <canvas class="particles-canvas"></canvas>
+  <div class="hero-bg-lines"></div>
+  <div class="hero-accent"></div>
+
+  <div class="hero-body">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-eyebrow">Facility Management Integrato · Dal 2015</div>
+          <h1 class="hero-h1">
+            Il tuo edificio,<br>
+            <em data-typewriter='["gestito con intelligenza.","in mani esperte.","senza pensieri.","valorizzato ogni giorno."]'>gestito con intelligenza.</em>
+          </h1>
+          <p class="hero-sub">
+            Dalla sanificazione a ozono alle pulizie quotidiane, dalla cura del verde al portierato: AllUp è il partner unico per ogni esigenza del tuo immobile. Un contratto, un referente, zero complicazioni.
+          </p>
+          <div class="hero-btns">
+            <a href="preventivo.html" class="btn btn-primary btn-lg">Richiedi Preventivo Gratuito</a>
+            <a href="servizi.html" class="btn btn-outline-white btn-lg">I Nostri Servizi</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats-bar">
+    <div class="container">
+      <div class="hero-stats-inner">
+        <div class="h-stat">
+          <span class="h-stat-n" data-count="10+">0</span>
+          <span class="h-stat-l">Anni di esperienza</span>
+        </div>
+        <div class="h-stat">
+          <span class="h-stat-n" data-count="1500+">0</span>
+          <span class="h-stat-l">Clienti soddisfatti</span>
+        </div>
+        <div class="h-stat">
+          <span class="h-stat-n">7</span>
+          <span class="h-stat-l">Servizi specializzati</span>
+        </div>
+        <div class="h-stat">
+          <span class="h-stat-n">h24</span>
+          <span class="h-stat-l">Reperibilità e pronto intervento</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TICKER ══ -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span class="ticker-item">✦ Sanificazione a Ozono <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">Pulizie Civili ed Industriali <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">✦ Disinfestazione e Derattizzazione <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">Facchinaggio Professionale <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">✦ Portierato e Reception <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">Oltre 1.500 Clienti Soddisfatti <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">✦ Servizi di Lavanolo <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">Manutenzione del Verde <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">✦ ISO 9001 · ISO 14001 · HACCP <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">Reperibilità h24 <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">✦ Preventivo Gratuito <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">Dal 2015 a Roma <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">✦ Sanificazione a Ozono <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">Pulizie Civili ed Industriali <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">✦ Disinfestazione e Derattizzazione <span class="ticker-sep">·</span></span>
+    <span class="ticker-item">Facchinaggio Professionale <span class="ticker-sep">·</span></span>
+  </div>
+</div>
+
+<!-- Wave separator -->
+<div class="wave-sep" style="background:var(--dark);">
+  <svg viewBox="0 0 1440 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,24 C200,72 500,0 720,36 C940,72 1200,8 1440,30 L1440,72 L0,72 Z" fill="#F6F6F4"/>
+    <path d="M0,48 C300,12 600,65 900,32 C1100,8 1300,55 1440,38 L1440,72 L0,72 Z" fill="#F6F6F4" opacity=".45"/>
+  </svg>
+</div>
+
+<!-- ══ INTRO ══ -->
+<section class="section bg-off">
+  <div class="container">
+    <div class="g2">
+      <div class="rv-left">
+        <div class="intro-img">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&q=80&fit=crop" alt="Team AllUp al lavoro">
+          <div class="intro-img-badge">
+            <span>★★★★★</span>&nbsp; Oltre <span>1.000 recensioni</span> verificate
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow rv-right">Chi siamo</div>
+        <h2 class="s-title rv-right d1">Da oltre 10 anni il partner unico per il tuo patrimonio immobiliare</h2>
+        <p class="s-text rv-right d2">
+          AllUp nasce dalla passione per un lavoro fatto bene. Oggi siamo un team di oltre 40 professionisti certificati che ogni giorno curano ambienti, spazi e persone per centinaia di clienti tra privati, aziende e grandi strutture in tutta Roma e dintorni.
+        </p>
+        <div class="intro-feats rv-right d2">
+          <div class="feat">
+            <div class="feat-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            </div>
+            <div class="feat-body">
+              <h4>7 servizi, un solo referente</h4>
+              <p>Pulizie, sanificazione, disinfestazione, facchinaggio, portierato, lavanolo e verde: tutto coordinato da un unico team con un unico contratto.</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="feat-body">
+              <h4>Certificazioni ISO 9001, 14001, 27001 e HACCP</h4>
+              <p>Ogni processo è documentato, tracciato e verificabile. La qualità non è un'opinione — è un sistema certificato da enti terzi indipendenti.</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="feat-body">
+              <h4>Team formato, assicurato e reperibile h24</h4>
+              <p>Oltre 40 professionisti specializzati, disponibili 7 giorni su 7. Pronto intervento garantito per emergenze tecniche e operative.</p>
+            </div>
+          </div>
+        </div>
+        <a href="chi-siamo.html" class="btn btn-outline rv-right d3">Scopri di più su di noi</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section class="section">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="eyebrow rv">I nostri servizi</div>
+      <h2 class="s-title rv d1">7 servizi, un unico partner<br>di fiducia a Roma</h2>
+      <p class="s-text rv d2">Dalla pulizia quotidiana alla sanificazione con ozono, dalla disinfestazione al verde: coordiniamo ogni esigenza del tuo spazio con personale certificato e pronto intervento h24.</p>
+    </div>
+
+    <div class="srv-list-wrap">
+    <div class="srv-list">
+
+      <div class="srv-list-item rv" data-srv="pulizie">
+        <span class="srv-list-num">01</span>
+        <div class="srv-list-body">
+          <h3 class="srv-list-title">Pulizie Civili ed Industriali</h3>
+          <p class="srv-list-text">Pulizie professionali per uffici, condomini, ospedali, scuole e stabilimenti. Protocolli HACCP e piani personalizzati.</p>
+        </div>
+        <button class="srv-list-btn">Dettagli <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+
+      <div class="srv-list-item rv d1" data-srv="sanificazione">
+        <span class="srv-list-num">02</span>
+        <div class="srv-list-body">
+          <h3 class="srv-list-title">Sanificazione Ambientale a Ozono</h3>
+          <p class="srv-list-text">Eliminiamo batteri, virus, muffe e cattivi odori con ozono certificato al 99,9% di efficacia, senza residui chimici.</p>
+        </div>
+        <button class="srv-list-btn">Dettagli <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+
+      <div class="srv-list-item rv d2" data-srv="disinfestazione">
+        <span class="srv-list-num">03</span>
+        <div class="srv-list-body">
+          <h3 class="srv-list-title">Disinfestazione e Derattizzazione</h3>
+          <p class="srv-list-text">Interventi mirati contro insetti infestanti e roditori con prodotti a basso impatto ambientale e operatori abilitati.</p>
+        </div>
+        <button class="srv-list-btn">Dettagli <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+
+      <div class="srv-list-item rv d3" data-srv="facchinaggio">
+        <span class="srv-list-num">04</span>
+        <div class="srv-list-body">
+          <h3 class="srv-list-title">Facchinaggio</h3>
+          <p class="srv-list-text">Traslochi, spostamenti interni, archiviazione e gestione logistica di materiali e arredi con cura e precisione.</p>
+        </div>
+        <button class="srv-list-btn">Dettagli <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+
+      <div class="srv-list-item rv d4" data-srv="portierato">
+        <span class="srv-list-num">05</span>
+        <div class="srv-list-body">
+          <h3 class="srv-list-title">Portierato e Reception</h3>
+          <p class="srv-list-text">Personale qualificato per gestione accessi, reception e presidio degli ambienti ogni giorno con professionalità.</p>
+        </div>
+        <button class="srv-list-btn">Dettagli <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+
+      <div class="srv-list-item rv d5" data-srv="lavanolo">
+        <span class="srv-list-num">06</span>
+        <div class="srv-list-body">
+          <h3 class="srv-list-title">Servizi di Lavanolo</h3>
+          <p class="srv-list-text">Fornitura, lavaggio e gestione di biancheria, divise e tessili per strutture sanitarie, alberghiere e aziendali.</p>
+        </div>
+        <button class="srv-list-btn">Dettagli <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+
+      <div class="srv-list-item rv d6" data-srv="verde">
+        <span class="srv-list-num">07</span>
+        <div class="srv-list-body">
+          <h3 class="srv-list-title">Manutenzione del Verde</h3>
+          <p class="srv-list-text">Cura di giardini, parchi condominiali e aree verdi aziendali. Interventi programmati per tutto l'anno.</p>
+        </div>
+        <button class="srv-list-btn">Dettagli <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+
+    </div>
+    <div class="srv-list-fade">
+      <button class="btn btn-primary" id="srvExpandBtn">Scopri tutti i servizi →</button>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS STRIP ══ -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="st-item rv">
+        <span class="st-n" data-count="1500">0</span>
+        <span class="st-l">Clienti attivi</span>
+      </div>
+      <div class="st-item rv d1">
+        <span class="st-n" data-count="10">0</span>
+        <span class="st-l">Anni nel settore</span>
+      </div>
+      <div class="st-item rv d2">
+        <span class="st-n" data-count="99">0</span>
+        <span class="st-l">% soddisfatti</span>
+      </div>
+      <div class="st-item rv d3">
+        <span class="st-n" data-count="40">0</span>
+        <span class="st-l">Professionisti nel team</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ WHY US ══ -->
+<section class="section bg-off">
+  <div class="container">
+    <div class="g2">
+      <div>
+        <div class="eyebrow rv">Perché sceglierci</div>
+        <h2 class="s-title rv d1">Professionalità che si vede, igiene che si sente</h2>
+        <p class="s-text rv d2 mt-3">Non basta che un ambiente sembri pulito: deve esserlo davvero. Noi lavoriamo per garantire risultati concreti, verificabili e duraturi, in ogni contesto e per ogni tipo di cliente.</p>
+        <a href="preventivo.html" class="btn btn-primary mt-4 rv d3">Richiedi un preventivo gratuito</a>
+      </div>
+      <div class="why-feats">
+        <div class="feat rv d1">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="feat-body">
+            <h4>Intervento in 24 ore</h4>
+            <p>Per le urgenze, garantiamo un sopralluogo o un intervento entro 24 ore dalla chiamata, senza costi aggiuntivi.</p>
+          </div>
+        </div>
+        <div class="feat rv d2">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="feat-body">
+            <h4>Garanzia di soddisfazione</h4>
+            <p>Se il risultato non ti soddisfa, torniamo a completare il lavoro. Senza discussioni, senza costi extra.</p>
+          </div>
+        </div>
+        <div class="feat rv d3">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div class="feat-body">
+            <h4>Preventivo trasparente</h4>
+            <p>Nessuna sorpresa in fattura. Il preventivo che ricevi è quello che paghi: chiaro, dettagliato e senza voci nascoste.</p>
+          </div>
+        </div>
+        <div class="feat rv d4">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="feat-body">
+            <h4>Disponibili in tutta Roma</h4>
+            <p>Operiamo su Roma e Provincia. Interveniamo presso la tua sede, a domicilio o in qualsiasi struttura commerciale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ REVIEWS ══ -->
+<section class="section">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="eyebrow rv">Dicono di noi</div>
+      <h2 class="s-title rv d1">Le parole dei nostri clienti</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review rv-left">
+        <div class="review-q">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Servizio impeccabile. Hanno pulito il mio appartamento dopo i lavori di ristrutturazione in modo straordinario. Puntualissimi e professionali. Li richiederò sicuramente.</p>
+        <div class="review-author">
+          <div class="rev-av">MR</div>
+          <div><div class="rev-name">Marco Rossi</div><div class="rev-role">Cliente Privato · Roma</div></div>
+        </div>
+      </div>
+      <div class="review rv d1">
+        <div class="review-q">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Collaboriamo con AllUp per la pulizia dei nostri uffici da tre anni. Affidabili, discreti, sempre al top. Non li cambieremmo per nessuna ragione.</p>
+        <div class="review-author">
+          <div class="rev-av">GF</div>
+          <div><div class="rev-name">Giulia Ferrari</div><div class="rev-role">Responsabile Uffici · Studio Legale</div></div>
+        </div>
+      </div>
+      <div class="review rv-right d2">
+        <div class="review-q">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Ho richiesto la sanificazione con ozono dopo un problema di umidità. Risultato eccellente, odori eliminati completamente. Risposta rapidissima e preventivo onesto.</p>
+        <div class="review-author">
+          <div class="rev-av">LA</div>
+          <div><div class="rev-name">Luca Andreotti</div><div class="rev-role">Proprietario · B&amp;B Roma Centro</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CERTIFICATIONS ══ -->
+<section class="section-sm bg-off">
+  <div class="container">
+    <p class="text-center rv" style="font-size:.76rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:2rem;">Certificazioni &amp; Conformità</p>
+    <div class="certs-row">
+      <div class="cert-item rv-zoom">
+        <img src="img/iso-9001.svg" alt="ISO 9001:2015 Certified" loading="lazy"/>
+        <span class="cert-name">ISO 9001:2015</span>
+      </div>
+      <div class="cert-item rv-zoom d1">
+        <img src="img/iso-27001.svg" alt="ISO 27001:2022 Certified" loading="lazy"/>
+        <span class="cert-name">ISO 27001:2022</span>
+      </div>
+      <div class="cert-item rv-zoom d2">
+        <img src="img/iso-14001.svg" alt="ISO 14001:2015 Certified" loading="lazy"/>
+        <span class="cert-name">ISO 14001:2015</span>
+      </div>
+      <div class="cert-item rv-zoom d3">
+        <img src="img/haccp.svg" alt="HACCP Certified" loading="lazy"/>
+        <span class="cert-name">HACCP</span>
+      </div>
+      <div class="cert-item rv-zoom d4">
+        <img src="img/trustpilot.svg" alt="Trustpilot 4.9/5" loading="lazy"/>
+        <span class="cert-name">Trustpilot 4.9</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<div class="cta-section" style="position:relative;overflow:hidden;">
+  <div class="deco-blob" style="width:350px;height:350px;background:rgba(224,94,40,.07);top:-80px;right:-80px;"></div>
+  <div class="deco-blob" style="width:220px;height:220px;background:rgba(224,94,40,.05);bottom:-50px;left:-40px;animation-delay:4s;"></div>
+  <div class="container cta-inner rv">
+    <div class="eyebrow" style="justify-content:center;color:rgba(255,255,255,.5);margin-bottom:.9rem;">
+      <span style="color:var(--orange);">Inizia oggi</span>
+    </div>
+    <h2 class="s-title white" style="max-width:640px;margin:0 auto 1.2rem;">Hai un edificio da gestire o un servizio da <span class="gradient-text">ottimizzare?</span></h2>
+    <p class="s-text white" style="margin:0 auto 2.5rem;">Richiedi un assessment gratuito: analizziamo la tua situazione e ti proponiamo la soluzione più efficiente. Nessun impegno, massima trasparenza.</p>
+    <div class="cta-btns">
+      <a href="preventivo.html" class="btn btn-primary btn-lg">Richiedi Assessment Gratuito</a>
+      <a href="contatti.html" class="btn btn-outline-white btn-lg">Contattaci</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SERVICE MODAL ══ -->
+<div class="srv-modal-overlay" id="srvModal" role="dialog" aria-modal="true">
+  <div class="srv-modal" id="srvModalBox">
+    <button class="srv-modal-close" id="srvModalClose" aria-label="Chiudi">✕</button>
+    <div id="srvModalContent"></div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="f-logo">All<em>Up</em></span>
+        <p class="f-desc">Facility Management integrato per privati e aziende. Certificati, affidabili e attenti alla sostenibilità. Operiamo su Roma e Provincia dal 2015.</p>
+        <div class="f-cert">
+          <span class="f-badge">ISO 9001</span>
+          <span class="f-badge">ISO 27001</span>
+          <span class="f-badge">ISO 14001</span>
+          <span class="f-badge">HACCP</span>
+        </div>
+        <div class="f-socials">
+          <a href="#" class="f-soc">fb</a>
+          <a href="#" class="f-soc">ig</a>
+          <a href="#" class="f-soc">in</a>
+          <a href="#" class="f-soc">wa</a>
+        </div>
+      </div>
+      <div>
+        <div class="f-col-title">Azienda</div>
+        <div class="f-links">
+          <a href="chi-siamo.html">Chi Siamo</a>
+          <a href="chi-siamo.html#mission">Mission &amp; Valori</a>
+          <a href="chi-siamo.html#team">Il Team</a>
+          <a href="chi-siamo.html#certificazioni">Certificazioni</a>
+          <a href="lavora-con-noi.html">Lavora con Noi</a>
+        </div>
+      </div>
+      <div>
+        <div class="f-col-title">Servizi</div>
+        <div class="f-links">
+          <a href="servizi.html#sanificazione">Sanificazione a Ozono</a>
+          <a href="servizi.html#pulizie">Pulizie Civili ed Industriali</a>
+          <a href="servizi.html#disinfestazione">Disinfestazione e Derattizzazione</a>
+          <a href="servizi.html#facchinaggio">Facchinaggio</a>
+          <a href="servizi.html#portierato">Portierato e Reception</a>
+          <a href="servizi.html#lavanolo">Servizi di Lavanolo</a>
+          <a href="servizi.html#verde">Manutenzione del Verde</a>
+        </div>
+      </div>
+      <div>
+        <div class="f-col-title">Contatti</div>
+        <div class="f-contact-row">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>+39 0670496958<br>Lun–Ven · 8:00–20:00</span>
+        </div>
+        <div class="f-contact-row">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>amministrazione@allupsrl.it</span>
+        </div>
+        <div class="f-contact-row">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Via Lusitania, 4, 00183 Roma RM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span class="footer-bottom-copy">© Copyright 2026 AllUp S.r.l. · Via Lusitania, 4, 00183 Roma RM · Reg. Imprese Roma (C.C.I.A.A.) n° 1296094 · P.IVA 11346621003 · Capitale sociale € 10.000</span>
+    <div class="footer-bottom-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="termini-condizioni.html">Termini e Condizioni</a>
+      <a href="sitemap.html">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Float -->
+<a href="https://wa.me/393000000000" class="wa-float" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+(function() {
+  const srvData = {
+    pulizie: {
+      tag: 'Servizio Base',
+      title: 'Pulizie Civili ed Industriali',
+      lead: 'Pulizie professionali per ogni tipo di ambiente: condomini, uffici, ospedali, scuole, centri commerciali e stabilimenti produttivi. Protocolli HACCP rigorosi, personale formato e piani di pulizia su misura per ogni cliente.',
+      bullets: [
+        'Pulizie ordinarie e straordinarie',
+        'Protocolli HACCP certificati',
+        'Cere, cristallizzazioni e trattamenti pavimenti',
+        'Pulizie post-cantiere e post-evento',
+        'Sanificazione di uffici e ambienti di lavoro',
+        'Pulizia condomini e spazi comuni',
+        'Piani di pulizia personalizzati',
+        'Reportistica e controllo qualità',
+      ],
+      link: 'servizi.html#pulizie',
+    },
+    sanificazione: {
+      tag: 'Specializzato',
+      title: 'Sanificazione Ambientale a Ozono',
+      lead: 'Eliminiamo batteri, virus, muffe e cattivi odori con ozono certificato al 99,9% di efficacia, senza residui chimici. Il metodo più avanzato per ambienti sanitari, alberghieri, residenziali e produttivi.',
+      bullets: [
+        'Efficace al 99,9% contro batteri e virus',
+        'Eliminazione definitiva di muffe e odori',
+        'Zero residui chimici o sostanze tossiche',
+        'Trattamento certificato e documentato',
+        'Ideale per ambienti sanitari e alberghieri',
+        'Disponibile per uso residenziale e uffici',
+        'Intervento rapido: 2–4 ore per ambiente',
+        'Reportistica completa del trattamento',
+      ],
+      link: 'servizi.html#sanificazione',
+    },
+    disinfestazione: {
+      tag: 'Specializzato',
+      title: 'Disinfestazione e Derattizzazione',
+      lead: 'Interventi professionali contro insetti infestanti e roditori con prodotti a basso impatto ambientale, operatori abilitati e piani di monitoraggio continuativi per ambienti civili e industriali.',
+      bullets: [
+        'Trattamenti antiblatta e antizanzare',
+        'Derattizzazione con esche certificate',
+        'Disinfestazione da cimici dei letti',
+        'Trattamenti preventivi programmati',
+        'Prodotti a basso impatto ambientale',
+        'Operatori con patentino fitosanitario',
+        'Monitoraggio continuativo e report',
+        'Interventi in ambienti civili e industriali',
+      ],
+      link: 'servizi.html#disinfestazione',
+    },
+    facchinaggio: {
+      tag: 'Logistica',
+      title: 'Facchinaggio',
+      lead: 'Traslochi, spostamenti interni, archiviazione e gestione logistica di materiali e arredi. Il nostro team specializzato gestisce ogni movimentazione con cura, precisione e rispetto degli spazi.',
+      bullets: [
+        'Traslochi aziendali e residenziali',
+        'Spostamenti e riorganizzazione uffici',
+        'Gestione e archiviazione documenti',
+        'Imballaggio con materiali dedicati',
+        'Smontaggio e rimontaggio arredi',
+        'Stoccaggio temporaneo su richiesta',
+        'Movimentazione attrezzature delicate',
+        'Disponibile per eventi e allestimenti',
+      ],
+      link: 'servizi.html#facchinaggio',
+    },
+    portierato: {
+      tag: 'Presidio',
+      title: 'Portierato e Reception',
+      lead: 'Personale qualificato per la gestione degli accessi, la reception e il presidio degli ambienti. Presenti ogni giorno con discrezione, professionalità e piena affidabilità.',
+      bullets: [
+        'Controllo accessi e gestione visitatori',
+        'Reception e centralino professionale',
+        'Presidio h24 su richiesta',
+        'Sorveglianza e ronde interne',
+        'Gestione corrispondenza e pacchi',
+        'Piccoli servizi di supporto interno',
+        'Personale formato e presentabile',
+        'Copertura per assenze e sostituzioni',
+      ],
+      link: 'servizi.html#portierato',
+    },
+    lavanolo: {
+      tag: 'Fornitura',
+      title: 'Servizi di Lavanolo',
+      lead: 'Fornitura, lavaggio e gestione completa di biancheria, divise e tessili per strutture sanitarie, alberghiere e aziendali. Cicli certificati, tracciabilità garantita e ritiro a domicilio.',
+      bullets: [
+        'Lavaggio biancheria piana e capi sartoriali',
+        'Noleggio e fornitura divise aziendali',
+        'Cicli di sterilizzazione certificati',
+        'Raccolta e consegna programmata',
+        'Tracciabilità RFID dei capi',
+        'Servizio per hotel e strutture ricettive',
+        'Fornitura per ambienti sanitari',
+        'Gestione guardaroba e deposito',
+      ],
+      link: 'servizi.html#lavanolo',
+    },
+    verde: {
+      tag: 'Esterno',
+      title: 'Manutenzione del Verde',
+      lead: 'Cura e manutenzione di giardini, parchi condominiali, aree verdi aziendali e spazi esterni. Interventi programmati per tutto l\'anno con team di giardinieri specializzati.',
+      bullets: [
+        'Taglio e cura del prato',
+        'Potatura di piante e siepi',
+        'Impianti di irrigazione automatici',
+        'Pulizia e cura di aree esterne',
+        'Piantumazione stagionale',
+        'Trattamenti fitosanitari',
+        'Progettazione spazi verdi',
+        'Manutenzione aree condominiali',
+      ],
+      link: 'servizi.html#verde',
+    },
+  };
+
+  const overlay = document.getElementById('srvModal');
+  const content = document.getElementById('srvModalContent');
+  const closeBtn = document.getElementById('srvModalClose');
+
+  function openModal(key) {
+    const d = srvData[key];
+    if (!d) return;
+    content.innerHTML =
+      '<div class="srv-modal-tag">' + d.tag + '</div>' +
+      '<h2 class="srv-modal-title">' + d.title + '</h2>' +
+      '<div class="srv-modal-divider"></div>' +
+      '<p class="srv-modal-lead">' + d.lead + '</p>' +
+      '<div class="srv-modal-bullets-title">Cosa include il servizio</div>' +
+      '<div class="srv-modal-bullets">' +
+        d.bullets.map(function(b){ return '<div class="srv-modal-bullet">' + b + '</div>'; }).join('') +
+      '</div>' +
+      '<div class="srv-modal-actions">' +
+        '<a href="preventivo.html" class="btn btn-primary">Richiedi Preventivo</a>' +
+        '<a href="' + d.link + '" class="btn btn-outline">Scopri di più</a>' +
+      '</div>';
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  var expandBtn = document.getElementById('srvExpandBtn');
+  if (expandBtn) {
+    expandBtn.addEventListener('click', function() {
+      var wrap = expandBtn.closest('.srv-list-wrap');
+      wrap.classList.add('expanded');
+    });
+  }
+
+  document.querySelectorAll('.srv-list-item').forEach(function(item) {
+    item.addEventListener('click', function() {
+      openModal(item.dataset.srv);
+    });
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeModal();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+})();
+</script>
+<script src="script.js"></script>
+
+<!-- ═══════════════════════════════════════════════
+     EXIT-INTENT POPUP — preventivo gratuito
+════════════════════════════════════════════════ -->
+<div class="ei-popup-overlay" id="eiOverlay" role="dialog" aria-modal="true" aria-label="Offerta preventivo gratuito">
+  <div class="ei-popup" id="eiBox">
+    <button class="ei-close" id="eiClose" aria-label="Chiudi">✕</button>
+
+    <div class="ei-header">
+      <span class="ei-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:4px"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Offerta Limitata
+      </span>
+      <span class="ei-timer" id="eiTimer">10:00</span>
+    </div>
+
+    <h2 class="ei-title">Aspetta — ottieni il tuo<br><em>preventivo gratuito</em></h2>
+    <p class="ei-sub">Risposta garantita in 24 ore. Sopralluogo senza impegno.<br>Riservato ai visitatori di oggi.</p>
+
+    <form class="ei-form" id="eiForm" novalidate>
+      <input type="text"  id="eiName"  name="ei_name"  placeholder="Nome e Cognome *" autocomplete="name" required>
+      <input type="tel"   id="eiPhone" name="ei_phone" placeholder="Numero di telefono *" autocomplete="tel" required>
+      <button type="submit" class="ei-btn">
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.472 2.027 7.775L0 32l8.47-2.016A15.93 15.93 0 0016 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.186 22.396c-.347.977-2.02 1.867-2.774 1.985-.754.119-1.688.168-2.718-.17-1.03-.34-2.35-.794-4.04-1.558-3.565-1.585-5.893-5.198-6.071-5.439-.178-.24-1.457-1.938-1.457-3.697 0-1.758.921-2.623 1.248-2.978.327-.354.712-.443.95-.443l.684.013c.219.01.513-.083.803.614.298.714 1.013 2.473 1.103 2.651.09.178.15.387.03.625-.12.237-.18.387-.358.596-.178.208-.375.465-.534.625-.179.179-.365.373-.157.731.208.358.925 1.526 1.985 2.47 1.363 1.22 2.513 1.597 2.87 1.775.358.179.566.15.775-.09.208-.24.893-1.041 1.131-1.399.238-.358.476-.298.803-.179.327.12 2.079 0.98 2.437 1.159.357.178.595.267.685.415.09.148.09.858-.257 1.835z"/></svg>
+        Ricevi Preventivo su WhatsApp
+      </button>
+    </form>
+
+    <div class="ei-success" id="eiSuccess">
+      <div class="ei-success-icon">✓</div>
+      <p><strong>Richiesta inviata!</strong><br>Ti risponderemo entro 24 ore.</p>
+    </div>
+
+    <button class="ei-dismiss" id="eiDismiss">No grazie, non voglio risparmiare</button>
+
+    <div class="ei-trust">
+      <span>🔒 ISO 9001</span>
+      <span class="ei-trust-sep">·</span>
+      <span>HACCP</span>
+      <span class="ei-trust-sep">·</span>
+      <span>Dal 2015</span>
+      <span class="ei-trust-sep">·</span>
+      <span>Roma</span>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ── Exit-Intent Popup ── */
+.ei-popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(10,10,10,.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .28s ease;
+}
+.ei-popup-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.ei-popup {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 24px 64px rgba(0,0,0,.28);
+  padding: 2.5rem 2rem 2rem;
+  max-width: 520px;
+  width: 100%;
+  transform: translateY(32px) scale(.97);
+  transition: transform .28s cubic-bezier(.34,1.26,.64,1);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.ei-popup-overlay.open .ei-popup {
+  transform: translateY(0) scale(1);
+}
+.ei-close {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #6b7280;
+  transition: background .15s, color .15s;
+  line-height: 1;
+}
+.ei-close:hover { background: #e5e7eb; color: #111; }
+.ei-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+.ei-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  padding: .3rem .75rem;
+  border-radius: 999px;
+  gap: 2px;
+}
+.ei-timer {
+  background: var(--orange, #e05e28);
+  color: #fff;
+  font-size: .95rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .5px;
+  padding: .3rem .9rem;
+  border-radius: 999px;
+  min-width: 68px;
+  text-align: center;
+}
+.ei-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--dark, #1a1a1a);
+  margin: 0 0 .75rem;
+}
+.ei-title em {
+  font-style: normal;
+  color: var(--orange, #e05e28);
+}
+.ei-sub {
+  font-size: .95rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+.ei-form {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+.ei-form input {
+  width: 100%;
+  padding: .85rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #111;
+  background: #f9fafb;
+  outline: none;
+  transition: border-color .15s;
+  box-sizing: border-box;
+}
+.ei-form input:focus { border-color: var(--orange, #e05e28); background: #fff; }
+.ei-form input.ei-error { border-color: #ef4444; }
+.ei-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background .15s, transform .1s;
+  line-height: 1.2;
+}
+.ei-btn:hover { background: #1ebe5d; transform: translateY(-1px); }
+.ei-btn:active { transform: translateY(0); }
+.ei-success {
+  display: none;
+  text-align: center;
+  padding: 1.5rem 0 1rem;
+}
+.ei-success-icon {
+  width: 52px; height: 52px;
+  background: #dcfce7;
+  color: #16a34a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1rem;
+}
+.ei-success p { font-size: .95rem; color: #374151; line-height: 1.6; margin: 0; }
+.ei-dismiss {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  font-size: .82rem;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: .5rem 0;
+  font-family: inherit;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: color .15s, text-decoration-color .15s;
+}
+.ei-dismiss:hover { color: #6b7280; text-decoration-color: #6b7280; }
+.ei-trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .25rem .5rem;
+  margin-top: 1.25rem;
+  font-size: .75rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+.ei-trust-sep { color: #d1d5db; }
+@media (max-width: 480px) {
+  .ei-popup { padding: 2rem 1.25rem 1.5rem; border-radius: 16px; }
+  .ei-title { font-size: 1.4rem; }
+  .ei-sub { font-size: .88rem; }
+  .ei-btn { font-size: .95rem; padding: .9rem 1rem; }
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+  var STORAGE_KEY = 'ei_shown';
+  var WA_NUM = '393514181029';
+
+  if (sessionStorage.getItem(STORAGE_KEY)) return;
+
+  var eiOverlay  = document.getElementById('eiOverlay');
+  var eiClose    = document.getElementById('eiClose');
+  var eiDismiss  = document.getElementById('eiDismiss');
+  var eiForm     = document.getElementById('eiForm');
+  var eiSuccess  = document.getElementById('eiSuccess');
+  var eiTimerEl  = document.getElementById('eiTimer');
+  var timerInterval = null;
+  var triggered  = false;
+
+  function updateTimerDisplay(s) {
+    var m = String(Math.floor(s / 60)).padStart(2, '0');
+    var sec = String(s % 60).padStart(2, '0');
+    eiTimerEl.textContent = m + ':' + sec;
+  }
+
+  function startTimer(seconds) {
+    updateTimerDisplay(seconds);
+    timerInterval = setInterval(function () {
+      seconds--;
+      if (seconds <= 0) {
+        clearInterval(timerInterval);
+        eiTimerEl.textContent = 'Scaduta';
+        eiTimerEl.style.background = '#6b7280';
+      } else {
+        updateTimerDisplay(seconds);
+      }
+    }, 1000);
+  }
+
+  function openPopup() {
+    sessionStorage.setItem(STORAGE_KEY, '1');
+    eiOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    startTimer(10 * 60);
+    eiOverlay.querySelector('.ei-popup').focus && eiOverlay.querySelector('.ei-popup').focus();
+  }
+
+  function closePopup() {
+    eiOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+    clearInterval(timerInterval);
+  }
+
+  /* ── Trigger logic ── */
+  setTimeout(function () {
+    document.addEventListener('mouseleave', function handler(e) {
+      if (triggered) return;
+      if (e.clientY <= 10) {
+        triggered = true;
+        openPopup();
+        document.removeEventListener('mouseleave', handler);
+      }
+    });
+  }, 5000);
+
+  /* Fallback: show after 50s if no exit intent detected */
+  setTimeout(function () {
+    if (!triggered) { triggered = true; openPopup(); }
+  }, 50000);
+
+  /* ── Close handlers ── */
+  eiClose.addEventListener('click', closePopup);
+  eiDismiss.addEventListener('click', closePopup);
+
+  eiOverlay.addEventListener('click', function (e) {
+    if (e.target === eiOverlay) closePopup();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && eiOverlay.classList.contains('open')) closePopup();
+  });
+
+  /* ── Form submit → WhatsApp ── */
+  eiForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nameEl  = document.getElementById('eiName');
+    var phoneEl = document.getElementById('eiPhone');
+    var valid = true;
+
+    nameEl.classList.remove('ei-error');
+    phoneEl.classList.remove('ei-error');
+
+    if (!nameEl.value.trim()) { nameEl.classList.add('ei-error'); nameEl.focus(); valid = false; }
+    else if (!phoneEl.value.trim()) { phoneEl.classList.add('ei-error'); phoneEl.focus(); valid = false; }
+
+    if (!valid) return;
+
+    var name  = nameEl.value.trim();
+    var phone = phoneEl.value.trim();
+    var msg = '🧹 *RICHIESTA PREVENTIVO — AllUp*\n\nNome: ' + name + '\nTelefono: ' + phone + '\n\n_Inviato dal sito allupsrl.it_';
+    window.open('https://wa.me/' + WA_NUM + '?text=' + encodeURIComponent(msg), '_blank');
+
+    eiForm.style.display = 'none';
+    eiSuccess.style.display = 'block';
+    clearInterval(timerInterval);
+  });
+})();
+</script>
+</body>
 </html>

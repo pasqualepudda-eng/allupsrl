@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 185" width="160" height="185">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#9A3412"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#9A3412" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <polygon points="80,5 154,46 154,139 80,180 6,139 6,46" fill="url(#bg)" filter="url(#sh)"/>
+  <polygon points="80,13 146,51 146,134 80,172 14,134 14,51" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <path d="M80,18 L98,26 L98,41 Q98,53 80,59 Q62,53 62,41 L62,26 Z" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+  <path d="M71,38 L77,44 L89,31" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="48" y="67" width="64" height="18" rx="5" fill="rgba(255,255,255,0.12)"/>
+  <text x="80" y="79.5" font-family="Arial Black, Arial, sans-serif" font-size="12" font-weight="900" fill="white" text-anchor="middle" letter-spacing="2">HACCP</text>
+  <text x="80" y="104" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="rgba(255,255,255,0.75)" text-anchor="middle" letter-spacing="1">HAZARD ANALYSIS &amp;</text>
+  <text x="80" y="115" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="rgba(255,255,255,0.75)" text-anchor="middle" letter-spacing="1">CRITICAL CONTROL POINTS</text>
+  <line x1="40" y1="126" x2="120" y2="126" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+  <text x="80" y="139" font-family="Arial, sans-serif" font-size="6.5" font-weight="700" fill="rgba(255,255,255,0.6)" text-anchor="middle" letter-spacing="1.5">FOOD SAFETY</text>
+  <rect x="40" y="148" width="80" height="14" rx="7" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <text x="80" y="158.5" font-family="Arial Black, Arial, sans-serif" font-size="6.5" font-weight="900" fill="white" text-anchor="middle" letter-spacing="1.5">CONFORMITÀ</text>
+</svg>

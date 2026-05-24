@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /privacy-policy.html
+Disallow: /termini-condizioni.html
+Disallow: /sitemap.html
+
+Sitemap: https://www.allupsrl.it/sitemap.xml

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | AllUp S.r.l. Roma</title>
+<meta name="description" content="Informativa trattamento dati personali AllUp S.r.l. ai sensi GDPR (Regolamento UE 2016/679). Via Lusitania 4, 00183 Roma RM.">
+<meta name="robots" content="noindex, follow">
+<meta name="author" content="AllUp S.r.l.">
+<meta name="geo.region" content="IT-RM">
+<meta name="geo.placename" content="Roma">
+<meta name="geo.position" content="41.8818;12.5191">
+<meta name="ICBM" content="41.8818, 12.5191">
+<link rel="canonical" href="https://www.allupsrl.it/privacy-policy.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.allupsrl.it/privacy-policy.html">
+<meta property="og:title" content="Privacy Policy | AllUp S.r.l. Roma">
+<meta property="og:description" content="Informativa trattamento dati personali AllUp S.r.l. ai sensi GDPR (Regolamento UE 2016/679). Via Lusitania 4, 00183 Roma RM.">
+<meta property="og:site_name" content="AllUp S.r.l.">
+<meta property="og:locale" content="it_IT">
+<meta property="og:image" content="https://www.allupsrl.it/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy Policy | AllUp S.r.l. Roma">
+<meta name="twitter:description" content="Informativa trattamento dati personali AllUp S.r.l. ai sensi GDPR (Regolamento UE 2016/679). Via Lusitania 4, 00183 Roma RM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="style.css">
+<style>
+.legal-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+.legal-toc {
+  position: sticky;
+  top: calc(var(--nav-h) + 2rem);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  padding: 1.8rem;
+}
+.legal-toc-title {
+  font-size: .68rem;
+  font-weight: 800;
+  color: var(--muted);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+.legal-toc a {
+  display: block;
+  padding: .5rem .8rem;
+  font-size: .84rem;
+  color: var(--gray);
+  font-weight: 500;
+  border-radius: var(--radius);
+  transition: all var(--ease);
+  margin-bottom: .2rem;
+}
+.legal-toc a:hover,
+.legal-toc a.active { color: var(--orange); background: var(--orange-bg); }
+.legal-toc a.active { font-weight: 700; }
+
+.legal-body { min-width: 0; }
+.legal-section { margin-bottom: 3.5rem; scroll-margin-top: calc(var(--nav-h) + 2rem); }
+.legal-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 1.2rem;
+  padding-bottom: .8rem;
+  border-bottom: 2px solid var(--orange);
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+.legal-section h2 span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; height: 28px;
+  background: var(--orange);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: .78rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.legal-section h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 1.5rem 0 .6rem;
+}
+.legal-section p,
+.legal-section li {
+  font-size: .9rem;
+  color: var(--gray);
+  line-height: 1.85;
+}
+.legal-section ul {
+  margin: .6rem 0 .6rem 1.2rem;
+  list-style: disc;
+}
+.legal-section ul li { margin-bottom: .4rem; }
+.legal-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .875rem;
+  margin: 1rem 0;
+}
+.legal-section table th,
+.legal-section table td {
+  padding: .75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.legal-section table th {
+  background: var(--bg);
+  font-weight: 700;
+  color: var(--dark);
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.legal-section table td { color: var(--gray); }
+.legal-info-box {
+  background: var(--orange-bg);
+  border-left: 3px solid var(--orange);
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+  padding: 1rem 1.4rem;
+  margin: 1.2rem 0;
+  font-size: .875rem;
+  color: var(--text);
+}
+.legal-info-box strong { color: var(--orange); }
+.legal-meta {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.2rem 1.6rem;
+  background: var(--bg);
+  border-radius: var(--radius-m);
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+.legal-meta-item { font-size: .8rem; color: var(--gray); }
+.legal-meta-item strong { color: var(--dark); display: block; font-size: .72rem; letter-spacing: .8px; text-transform: uppercase; margin-bottom: .15rem; }
+
+@media (max-width: 960px) {
+  .legal-layout { grid-template-columns: 1fr; }
+  .legal-toc { position: static; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "CleaningService"
+      ],
+      "@id": "https://www.allupsrl.it/#business",
+      "name": "AllUp S.r.l.",
+      "legalName": "AllUp S.r.l.",
+      "description": "Facility Management integrato a Roma: pulizie professionali, sanificazione a ozono, disinfestazione, portierato, lavanolo e manutenzione del verde.",
+      "url": "https://www.allupsrl.it",
+      "telephone": "+390670496958",
+      "email": "amministrazione@allupsrl.it",
+      "foundingDate": "2015",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Lusitania, 4",
+        "addressLocality": "Roma",
+        "addressRegion": "RM",
+        "postalCode": "00183",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "41.8818",
+        "longitude": "12.5191"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Roma"
+        },
+        {
+          "@type": "State",
+          "name": "Lazio"
+        }
+      ],
+      "priceRange": "€€",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servizi Facility Management Roma",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sanificazione a Ozono Roma",
+              "provider": {
+                "@id": "https://www.allupsrl.it/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pulizie Civili e Industriali Roma"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Disinfestazione e Derattizzazione Roma"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Facchinaggio Roma"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Portierato e Reception Roma"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Lavanolo Roma"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Manutenzione del Verde Roma"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.facebook.com/allupsrl",
+        "https://www.instagram.com/allupsrl",
+        "https://www.linkedin.com/company/allup-srl"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.allupsrl.it/#website",
+      "url": "https://www.allupsrl.it",
+      "name": "AllUp - Facility Management Roma",
+      "publisher": {
+        "@id": "https://www.allupsrl.it/#business"
+      },
+      "inLanguage": "it-IT",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.allupsrl.it/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.allupsrl.it/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Privacy Policy",
+          "item": "https://www.allupsrl.it/privacy-policy.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <a href="tel:+390670496958" class="topbar-item">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +39 0670496958
+      </a>
+      <a href="mailto:amministrazione@allupsrl.it" class="topbar-item">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        amministrazione@allupsrl.it
+      </a>
+    </div>
+    <div class="topbar-right">
+      <a href="#" class="topbar-soc" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><div class="topbar-divider"></div>
+      <a href="#" class="topbar-soc" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><div class="topbar-divider"></div>
+      <a href="#" class="topbar-soc" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container nav-inner">
+    <a href="index.html" class="site-logo">
+      <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2L13.09 8.26L19 6L15.45 11.25L21 13.5L15.36 14.9L17 21L12 17.27L7 21L8.64 14.9L3 13.5L8.55 11.25L5 6L10.91 8.26L12 2Z"/></svg></div>
+      <div class="logo-text-wrap"><span class="logo-name">All<em>Up</em></span><span class="logo-sub">Pulizie Professionali</span></div>
+    </a>
+    <nav class="nav-menu">
+      <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+      <div class="nav-item">
+        <a href="chi-siamo.html" class="nav-link">Chi Siamo <svg class="nav-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="dropdown">
+          <a href="chi-siamo.html#mission" class="dd-item">Mission &amp; Valori</a>
+          <a href="chi-siamo.html#storia" class="dd-item">La Nostra Storia</a>
+          <a href="chi-siamo.html#team" class="dd-item">Il Team</a>
+          <div class="dd-sep"></div>
+          <a href="chi-siamo.html#certificazioni" class="dd-item">Certificazioni</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="servizi.html" class="nav-link">Servizi <svg class="nav-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="dropdown">
+          <a href="servizi.html#privati" class="dd-item">Servizi per Privati</a>
+          <a href="servizi.html#aziende" class="dd-item">Servizi per Aziende</a>
+          <div class="dd-sep"></div>
+          <a href="servizi.html#speciali" class="dd-item">Servizi Speciali</a>
+          <a href="servizi.html#sanificazione" class="dd-item">Sanificazione &amp; Ozono</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="blog.html" class="nav-link">Blog</a></div>
+      <div class="nav-item"><a href="preventivo.html" class="nav-link">Preventivo</a></div>
+      <div class="nav-item"><a href="lavora-con-noi.html" class="nav-link">Lavora con Noi</a></div>
+    </nav>
+    <a href="contatti.html" class="nav-btn">Contatti</a>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mob-drawer" id="mobDrawer">
+  <a href="index.html" class="mob-link">Home</a>
+  <a href="chi-siamo.html" class="mob-link">Chi Siamo</a>
+  <a href="servizi.html" class="mob-link">Servizi</a>
+  <a href="blog.html" class="mob-link">Blog</a>
+  <a href="preventivo.html" class="mob-link">Preventivo</a>
+  <a href="lavora-con-noi.html" class="mob-link">Lavora con Noi</a>
+  <a href="contatti.html" class="mob-link cta-mob">Contatti →</a>
+</nav>
+
+<!-- PAGE BANNER -->
+<div class="page-banner" style="position:relative;overflow:hidden;">
+  <canvas class="particles-canvas" style="opacity:.5;"></canvas>
+  <div class="container page-banner-inner">
+    <div class="pg-eyebrow">Legale</div>
+    <h1>Privacy Policy</h1>
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a><span class="bc-sep">›</span><span>Privacy Policy</span>
+    </nav>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<section class="section">
+  <div class="container">
+    <div class="legal-layout">
+
+      <!-- Sidebar TOC -->
+      <aside class="legal-toc rv">
+        <div class="legal-toc-title">Indice</div>
+        <a href="#titolare">1. Titolare</a>
+        <a href="#dati">2. Dati raccolti</a>
+        <a href="#finalita">3. Finalità</a>
+        <a href="#base-legale">4. Base legale</a>
+        <a href="#conservazione">5. Conservazione</a>
+        <a href="#terzi">6. Comunicazione a terzi</a>
+        <a href="#cookie">7. Cookie</a>
+        <a href="#diritti">8. I tuoi diritti</a>
+        <a href="#modifiche">9. Modifiche</a>
+      </aside>
+
+      <!-- Body -->
+      <div class="legal-body rv d1">
+
+        <div class="legal-meta">
+          <div class="legal-meta-item"><strong>Versione</strong>1.2</div>
+          <div class="legal-meta-item"><strong>Data di emissione</strong>01 gennaio 2025</div>
+          <div class="legal-meta-item"><strong>Ultimo aggiornamento</strong>23 maggio 2025</div>
+          <div class="legal-meta-item"><strong>Riferimento normativo</strong>Reg. UE 2016/679 (GDPR)</div>
+        </div>
+
+        <div class="legal-info-box">
+          La presente informativa descrive come <strong>AllUp S.r.l.</strong> raccoglie, utilizza e protegge i dati personali degli utenti che visitano il sito web o che richiedono i nostri servizi, in conformità con il Regolamento Generale sulla Protezione dei Dati (GDPR).
+        </div>
+
+        <!-- 1 -->
+        <div class="legal-section" id="titolare">
+          <h2><span>1</span> Titolare del Trattamento</h2>
+          <p>Il titolare del trattamento dei dati personali è:</p>
+          <ul>
+            <li><strong>AllUp S.r.l.</strong></li>
+            <li>Via Lusitania, 4 — 00183 Roma (RM)</li>
+            <li>P.IVA: 12345678901 — C.F.: 12345678901</li>
+            <li>Email: <a href="mailto:privacy@allupsrl.it" style="color:var(--orange)">privacy@allupsrl.it</a></li>
+            <li>Telefono: <a href="tel:+390670496958" style="color:var(--orange)">+39 0670496958</a></li>
+          </ul>
+          <p>Per questioni relative alla protezione dei dati è possibile contattare il nostro Responsabile della Protezione dei Dati (DPO) all'indirizzo: <a href="mailto:dpo@allupsrl.it" style="color:var(--orange)">dpo@allupsrl.it</a>.</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="legal-section" id="dati">
+          <h2><span>2</span> Tipologie di Dati Raccolti</h2>
+          <h3>Dati forniti direttamente dall'utente</h3>
+          <ul>
+            <li>Dati anagrafici: nome, cognome</li>
+            <li>Dati di contatto: indirizzo email, numero di telefono</li>
+            <li>Dati relativi all'indirizzo (per l'erogazione del servizio)</li>
+            <li>Dati contenuti nei messaggi inviati tramite i moduli di contatto</li>
+            <li>Dati relativi al curriculum vitae (per candidature lavorative)</li>
+          </ul>
+          <h3>Dati raccolti automaticamente</h3>
+          <ul>
+            <li>Indirizzo IP e dati di navigazione (pagine visitate, durata della visita)</li>
+            <li>Tipo di browser e sistema operativo</li>
+            <li>Dati tecnici di connessione (data, ora, fuso orario)</li>
+            <li>Dati di interazione con il sito (click, scroll, eventi)</li>
+          </ul>
+          <p>Non raccogliamo dati appartenenti a categorie particolari (dati sensibili) salvo che non sia strettamente necessario per l'erogazione del servizio e con esplicito consenso dell'interessato.</p>
+        </div>
+
+        <!-- 3 -->
+        <div class="legal-section" id="finalita">
+          <h2><span>3</span> Finalità del Trattamento</h2>
+          <table>
+            <thead><tr><th>Finalità</th><th>Descrizione</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Gestione richieste</strong></td><td>Rispondere a richieste di informazioni, preventivi e assistenza</td></tr>
+              <tr><td><strong>Erogazione servizi</strong></td><td>Eseguire i servizi di pulizia richiesti e gestire i contratti</td></tr>
+              <tr><td><strong>Obblighi di legge</strong></td><td>Adempiere agli obblighi fiscali, contabili e normativi vigenti</td></tr>
+              <tr><td><strong>Selezione del personale</strong></td><td>Gestire le candidature di lavoro pervenute</td></tr>
+              <tr><td><strong>Comunicazioni commerciali</strong></td><td>Inviare newsletter e promozioni (solo con consenso esplicito)</td></tr>
+              <tr><td><strong>Miglioramento del sito</strong></td><td>Analisi statistica anonimizzata del comportamento degli utenti</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 4 -->
+        <div class="legal-section" id="base-legale">
+          <h2><span>4</span> Base Legale del Trattamento</h2>
+          <p>Il trattamento dei dati personali avviene sulla base delle seguenti basi giuridiche:</p>
+          <ul>
+            <li><strong>Consenso dell'interessato</strong> (art. 6, par. 1, lett. a GDPR): per l'invio di comunicazioni di marketing e newsletter</li>
+            <li><strong>Esecuzione di un contratto</strong> (art. 6, par. 1, lett. b GDPR): per l'erogazione dei servizi richiesti</li>
+            <li><strong>Obbligo legale</strong> (art. 6, par. 1, lett. c GDPR): per adempimenti fiscali e normativi</li>
+            <li><strong>Legittimo interesse</strong> (art. 6, par. 1, lett. f GDPR): per la gestione delle richieste di contatto, la prevenzione di frodi e il miglioramento dei servizi</li>
+          </ul>
+        </div>
+
+        <!-- 5 -->
+        <div class="legal-section" id="conservazione">
+          <h2><span>5</span> Conservazione dei Dati</h2>
+          <p>I dati personali sono conservati per il tempo strettamente necessario alle finalità per cui sono stati raccolti:</p>
+          <ul>
+            <li><strong>Dati contrattuali:</strong> 10 anni dalla conclusione del rapporto contrattuale (obbligo legale)</li>
+            <li><strong>Dati di marketing:</strong> fino alla revoca del consenso o per un massimo di 24 mesi dall'ultima interazione</li>
+            <li><strong>Candidature lavorative:</strong> 12 mesi dalla ricezione, salvo consenso a conservazione prolungata</li>
+            <li><strong>Dati di navigazione:</strong> 13 mesi dalla raccolta</li>
+            <li><strong>Richieste di contatto:</strong> 24 mesi dalla chiusura della pratica</li>
+          </ul>
+          <p>Trascorso il periodo di conservazione, i dati vengono cancellati o resi anonimi in modo sicuro.</p>
+        </div>
+
+        <!-- 6 -->
+        <div class="legal-section" id="terzi">
+          <h2><span>6</span> Comunicazione a Terzi</h2>
+          <p>I dati personali non vengono venduti né ceduti a terzi per finalità commerciali. Possono essere comunicati a:</p>
+          <ul>
+            <li><strong>Fornitori di servizi tecnici</strong> (hosting, email, analytics) vincolati da accordi di trattamento dati</li>
+            <li><strong>Consulenti e professionisti</strong> (commercialista, avvocato) per adempimenti legali</li>
+            <li><strong>Autorità pubbliche</strong> nei casi previsti dalla legge</li>
+          </ul>
+          <p>Tutti i responsabili esterni del trattamento sono stati selezionati con cura e sono vincolati da appositi accordi ai sensi dell'art. 28 GDPR. I dati non vengono trasferiti in Paesi extra-UE, salvo in presenza di garanzie adeguate (es. clausole contrattuali standard della Commissione europea).</p>
+        </div>
+
+        <!-- 7 -->
+        <div class="legal-section" id="cookie">
+          <h2><span>7</span> Cookie e Tecnologie di Tracciamento</h2>
+          <p>Il sito utilizza cookie tecnici necessari al funzionamento. Con il tuo consenso, utilizziamo anche cookie analitici e di marketing.</p>
+          <table>
+            <thead><tr><th>Tipologia</th><th>Scopo</th><th>Durata</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Tecnici</strong></td><td>Funzionamento del sito, preferenze di navigazione</td><td>Sessione / 1 anno</td></tr>
+              <tr><td><strong>Analitici</strong></td><td>Statistiche di utilizzo anonimizzate (Google Analytics)</td><td>13 mesi</td></tr>
+              <tr><td><strong>Marketing</strong></td><td>Pubblicità personalizzata (solo con consenso)</td><td>90 giorni</td></tr>
+            </tbody>
+          </table>
+          <p>Puoi gestire le preferenze sui cookie in qualsiasi momento tramite il banner cookie o le impostazioni del tuo browser. Per disabilitare Google Analytics: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" style="color:var(--orange)">tools.google.com/dlpage/gaoptout</a>.</p>
+        </div>
+
+        <!-- 8 -->
+        <div class="legal-section" id="diritti">
+          <h2><span>8</span> I Tuoi Diritti</h2>
+          <p>Ai sensi degli artt. 15–22 del GDPR, hai il diritto di:</p>
+          <ul>
+            <li><strong>Accesso</strong> — ottenere conferma che siano trattati dati che ti riguardano e accedere a una copia</li>
+            <li><strong>Rettifica</strong> — ottenere la correzione di dati inesatti o l'integrazione di quelli incompleti</li>
+            <li><strong>Cancellazione</strong> — richiedere la cancellazione dei tuoi dati ("diritto all'oblio")</li>
+            <li><strong>Limitazione</strong> — richiedere la sospensione del trattamento in determinati casi</li>
+            <li><strong>Portabilità</strong> — ricevere i dati in formato strutturato e leggibile da dispositivo automatico</li>
+            <li><strong>Opposizione</strong> — opporti al trattamento per motivi legati alla tua situazione particolare</li>
+            <li><strong>Revoca del consenso</strong> — revocare il consenso in qualsiasi momento, senza pregiudicare la liceità del trattamento precedente</li>
+          </ul>
+          <div class="legal-info-box">
+            Per esercitare i tuoi diritti scrivi a <strong>privacy@allupsrl.it</strong> indicando nome, cognome e la richiesta specifica. Risponderemo entro 30 giorni.
+          </div>
+          <p>Hai inoltre il diritto di proporre reclamo al <strong>Garante per la Protezione dei Dati Personali</strong> (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener" style="color:var(--orange)">garanteprivacy.it</a>) se ritieni che il trattamento violi il GDPR.</p>
+        </div>
+
+        <!-- 9 -->
+        <div class="legal-section" id="modifiche">
+          <h2><span>9</span> Modifiche alla Privacy Policy</h2>
+          <p>AllUp S.r.l. si riserva il diritto di aggiornare questa informativa per riflettere modifiche operative, normative o tecnologiche. In caso di modifiche sostanziali, ne daremo comunicazione tramite avviso sul sito o email agli utenti registrati.</p>
+          <p>Ti invitiamo a consultare periodicamente questa pagina. La data dell'ultimo aggiornamento è riportata in cima alla pagina.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="f-logo">All<em>Up</em></span>
+        <p class="f-desc">Servizi di pulizia professionale per privati e aziende. Certificati, affidabili e attenti all'ambiente. Operiamo su Roma e Provincia dal 2015.</p>
+        <div class="f-cert"><span class="f-badge">ISO 9001</span><span class="f-badge">ISO 27001</span><span class="f-badge">ISO 14001</span><span class="f-badge">HACCP</span></div>
+        <div class="f-socials"><a href="#" class="f-soc">fb</a><a href="#" class="f-soc">ig</a><a href="#" class="f-soc">in</a><a href="#" class="f-soc">wa</a></div>
+      </div>
+      <div>
+        <div class="f-col-title">Azienda</div>
+        <div class="f-links"><a href="chi-siamo.html">Chi Siamo</a><a href="chi-siamo.html#team">Il Team</a><a href="lavora-con-noi.html">Lavora con Noi</a></div>
+      </div>
+      <div>
+        <div class="f-col-title">Servizi</div>
+        <div class="f-links"><a href="servizi.html#privati">Pulizia Appartamenti</a><a href="servizi.html#aziende">Pulizia Uffici</a><a href="servizi.html#speciali">Sanificazione</a><a href="preventivo.html">Richiedi Preventivo</a></div>
+      </div>
+      <div>
+        <div class="f-col-title">Contatti</div>
+        <div class="f-contact-row"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><span>+39 0670496958</span></div>
+        <div class="f-contact-row"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>amministrazione@allupsrl.it</span></div>
+        <div class="f-contact-row"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Via Lusitania, 4, 00183 Roma RM</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span class="footer-bottom-copy">© Copyright 2026 AllUp S.r.l. · Via Lusitania, 4, 00183 Roma RM · Reg. Imprese Roma (C.C.I.A.A.) n° 1296094 · P.IVA 11346621003 · Capitale sociale € 10.000</span>
+    <div class="footer-bottom-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="termini-condizioni.html">Termini e Condizioni</a>
+      <a href="sitemap.html">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/393000000000" class="wa-float" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script src="script.js"></script>
+</body>
+</html>
