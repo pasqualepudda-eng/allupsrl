@@ -1,0 +1,156 @@
+/* ════════════════════════════════════════
+   OTTIMIZZAZIONI MOBILE E TOUCH
+   (caricato per ultimo: queste regole hanno la precedenza)
+   ════════════════════════════════════════ */
+
+a, button, [role="button"], label, summary { -webkit-tap-highlight-color: transparent; }
+
+/* ── Dispositivi touch: niente "hover appiccicoso" dopo il tocco, feedback alla pressione ── */
+@media (hover: none) {
+  .value-card:hover, .cert-card:hover, .qc-card:hover, .perche-card:hover, .culture-card:hover,
+  .sm-group:hover, .pos-card:hover, .art-card:hover, .blog-featured:hover, .srv-list-item:hover,
+  .num-list li:hover, .err-item:hover, .srv-pill:hover { translate: none; }
+  .srv-list-item:hover::before { transform: scaleX(0); }
+  .btn:active, .cc-btn:active, .cat-pill:active, .srv-pill:active { scale: .97; }
+  .btn, .cc-btn, .cat-pill, .srv-pill { transition-property: background, color, border-color, box-shadow, scale; }
+  .tilt-glow { display: none; }
+}
+
+/* ════════ TABLET E SMARTPHONE ════════ */
+@media (max-width: 768px) {
+  :root { --nav-h: 64px; }
+
+  /* Campi a 16px: sotto questa misura iPhone ingrandisce la pagina al tocco */
+  .form-input, .form-select, .form-ta, .blog-search-input, .blog-nl-input, .ei-form input { font-size: 16px; }
+
+  /* A capo pensati per desktop: su mobile il testo scorre naturale */
+  .sbr { display: none; }
+
+  /* Topbar: telefono + stato "pronto intervento", aree toccabili alte */
+  .topbar-right { display: flex; }
+  .topbar-right .topbar-soc, .topbar-right .topbar-divider { display: none; }
+  .topbar-item { min-height: var(--topbar-h); }
+  .topbar-left .topbar-item[href^="mailto:"] { display: none; } /* email: resta in footer e contatti */
+  .burger { padding: 13px 11px; margin-right: -11px; }
+
+  /* Hero: occupa esattamente il primo schermo */
+  .hero { min-height: calc(100svh - var(--topbar-h) - var(--nav-h)); }
+  .hero-inner { padding: 2rem 0 2.5rem; }
+  .hero-h1 { margin-bottom: 1.1rem; }
+  .hero-sub { font-size: .98rem; margin-bottom: 2rem; }
+  .hero-aurora span { animation: none; filter: blur(60px); }
+
+  /* Pulsanti principali a tutta larghezza, stessa misura */
+  .hero-btns, .cta-btns { flex-direction: column; align-items: stretch; width: 100%; max-width: 420px; }
+  .cta-btns { margin: 0 auto; }
+  .hero-btns .magnetic, .cta-btns .magnetic { width: 100%; }
+  .hero-btns .btn, .cta-btns .btn { width: 100%; justify-content: center; }
+
+  /* Banner pagine interne */
+  .page-banner h1 { font-size: clamp(1.75rem, 7.4vw, 2.3rem); }
+  .breadcrumb a { padding: .55rem 0; }
+  .banner-orb { animation: none; }
+
+  /* Intro home */
+  .intro-img-badge { font-size: .74rem; padding: .8rem 1rem; margin: .75rem; }
+
+  /* Lista servizi home */
+  .srv-list { margin-top: 2rem; }
+  .srv-list-item { padding: 1.5rem .9rem; gap: .5rem 1rem; }
+  .srv-list-wrap { border-radius: var(--radius-l); }
+
+  /* Chi siamo */
+  .mission-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; }
+  .mission-stat-n { font-size: 1.85rem; }
+  .mission-stat-l { font-size: .66rem; letter-spacing: .3px; }
+
+  /* Servizi: pillole su una riga scorrevole invece di una colonna lunga */
+  .srv-pills {
+    flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto;
+    margin: 2rem -.9rem 0; padding: .3rem .9rem 1rem;
+    scroll-snap-type: x proximity; scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 .9rem, #000 calc(100% - 2.5rem), transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 .9rem, #000 calc(100% - 2.5rem), transparent);
+  }
+  .srv-pills::-webkit-scrollbar { display: none; }
+  .srv-pills > * { flex-shrink: 0; scroll-snap-align: start; }
+  .srv-pill { padding: .75rem 1.2rem; }
+  .srv-detail { gap: 1.6rem; }
+  .srv-detail-content h2 { font-size: 1.6rem; }
+  .srv-tag { font-size: .68rem; }
+  .srv-nav { top: calc(var(--nav-h) + 8px); }
+  html[data-header="hidden"] .srv-nav { top: 8px; }
+
+  /* Contatti */
+  .quick-contacts { margin-top: 0; gap: 1rem; }
+  .map-ph .btn-sm { padding: .8rem 1.2rem; }
+  .map-ph-prefs { padding: .5rem 0; }
+
+  /* Lavora con noi */
+  .pos-card { padding: 1.5rem 1.3rem; gap: 1rem; }
+  .pos-card .magnetic, .pos-card .btn { width: 100%; justify-content: center; }
+  .cta-strip { padding: 3.5rem 0; }
+  .cta-strip-inner .magnetic, .cta-strip-inner .btn { width: 100%; justify-content: center; }
+
+  /* Blog */
+  .blog-hero { padding: 3.5rem 0 2.5rem; }
+  .blog-hero p { font-size: .98rem; margin-bottom: 2rem; }
+  .blog-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem 1rem; margin-top: 2.2rem; padding-top: 2.2rem; }
+  .cat-pill { padding: .7rem 1.1rem; }
+  .blog-main { padding: 2.5rem 0 4rem; }
+  .blog-newsletter { padding: 2rem 1.5rem; }
+
+  /* Articoli */
+  .art-hero { padding: 2.5rem 0 2.2rem; }
+  .art-back { padding: .5rem 0; margin-bottom: 1rem; }
+  .art-hero-lead { font-size: .98rem; }
+  .art-layout { padding-top: 1.8rem; }
+  .art-lead { font-size: 1.05rem; }
+  .sidebar-toc { display: none; } /* senza colonna laterale l'indice finirebbe in fondo all'articolo */
+  .art-sidebar { grid-template-columns: 1fr; }
+  .stat-card { padding: 1.1rem; }
+  .art-cta-banner { padding: 3.5rem 0; }
+  .related-section { padding: 3rem 0; }
+
+  /* Pagine legali: indice compatto su due colonne */
+  .legal-toc { padding: 1.2rem; }
+  .legal-toc a { padding: .65rem .7rem; }
+
+  /* Footer: colonne di link affiancate, aree toccabili più alte */
+  .footer-top { padding: 3.5rem 1rem 2.5rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.2rem 1.2rem; }
+  .footer-grid > :first-child, .footer-grid > :last-child { grid-column: 1 / -1; }
+  .f-desc { max-width: none; }
+  .f-links { gap: 0; }
+  .f-links a { padding: .5rem 0; }
+  .f-soc { width: 40px; height: 40px; }
+  .f-col-title { margin-bottom: .8rem; }
+  .f-contact-row { margin-bottom: .4rem; }
+  .f-contact-row span { line-height: 1.9; }
+  .footer-bottom-links a, .footer-cookie-btn { padding: .45rem 0; }
+  .back-top { margin-top: .8rem; }
+}
+
+/* ════════ SMARTPHONE ════════ */
+@media (max-width: 600px) {
+  /* Team e certificazioni su due colonne: la pagina si accorcia della metà */
+  .team-grid { grid-template-columns: 1fr 1fr; gap: 1.6rem .9rem; }
+  .team-name { font-size: .92rem; }
+  .team-role { font-size: .66rem; letter-spacing: .5px; }
+  .team-bio { font-size: .76rem; }
+  .cert-list { grid-template-columns: 1fr 1fr; gap: .8rem; }
+  .cert-card { padding: 1.2rem .9rem; }
+  .cert-card-icon img { width: 70px; height: auto; }
+  .cert-card h4 { font-size: .84rem; }
+  .cert-card p { font-size: .74rem; line-height: 1.55; }
+
+  .legal-toc { display: grid; grid-template-columns: 1fr 1fr; column-gap: .4rem; }
+  .legal-toc-title { grid-column: 1 / -1; }
+}
+
+/* ── Schermi molto stretti (≤ 380px) ── */
+@media (max-width: 380px) {
+  .topbar-live { display: none; }
+  .hero-h1 { font-size: 2.6rem; }
+  .team-grid, .cert-list { grid-template-columns: 1fr; }
+}
