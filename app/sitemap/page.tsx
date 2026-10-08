@@ -45,11 +45,12 @@ const groups: Group[] = [
       </svg>
     ),
     links: [
-      { href: '/chi-siamo', text: 'Chi Siamo', desc: 'Storia, valori, team e certificazioni' },
+      { href: '/chi-siamo', text: 'Chi Siamo', desc: 'Storia, valori, squadre, certificazioni e referenze' },
       { href: '/chi-siamo#mission', text: 'Mission & Valori', anchor: true },
       { href: '/chi-siamo#storia', text: 'La Nostra Storia', anchor: true },
       { href: '/chi-siamo#team', text: 'Il Team', anchor: true },
-      { href: '/chi-siamo#certificazioni', text: 'Certificazioni ISO', anchor: true },
+      { href: '/chi-siamo#certificazioni', text: 'Certificazioni', anchor: true },
+      { href: '/chi-siamo#referenze', text: 'Referenze', anchor: true },
     ],
   },
   {

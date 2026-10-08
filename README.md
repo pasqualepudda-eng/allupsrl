@@ -6,9 +6,9 @@ Sito di AllUp (Facility Management, Roma) realizzato con **Next.js 16** (App Rou
 
 ```bash
 npm install
-npm run dev      # sviluppo su http://127.0.0.1:5500 (anche da rete locale: http://<IP-del-Mac>:5500)
+npm run dev      # sviluppo su http://127.0.0.1:5501 (anche da rete locale: http://<IP-del-Mac>:5501)
 npm run build    # build di produzione (tutte le pagine sono statiche)
-npm start        # avvia la build di produzione sulla porta 5500
+npm start        # avvia la build di produzione sulla porta 5501
 ```
 
 ## Struttura
@@ -23,6 +23,8 @@ npm start        # avvia la build di produzione sulla porta 5500
 | `lib/` | Dati condivisi: contatti e menu (`site.ts`), servizi, articoli del blog, SEO |
 
 Per modificare telefono, email o numero WhatsApp: `lib/site.ts`.
+Certificazioni: `lib/certifications.ts` (dati) e `public/certificazioni/` (PDF originali + anteprime JPG). Al rinnovo di un certificato sostituire PDF e JPG mantenendo lo stesso nome e aggiornare numero e date.
+Numeri aziendali, squadre e referenze: `lib/company.ts`.
 Per i servizi: `lib/services.ts`. Per gli articoli del blog: `lib/blog.ts` (card) e `content/articles.ts` (testo).
 
 ## Note

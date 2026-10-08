@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Stagger, StaggerItem } from '@/components/fx/Reveal';
 import { MailIcon, PhoneIcon, PinIcon } from '@/components/icons';
 import CookieSettingsButton from '@/components/consent/CookieSettingsButton';
+import { certShortList } from '@/lib/certifications';
 import { nav, site, waLink } from '@/lib/site';
 import { BackToTop, FooterMark } from './FooterFx';
 
@@ -17,14 +18,15 @@ export default function Footer() {
               All<em>Up</em>
             </span>
             <p className="f-desc">
-              Facility Management integrato per privati e aziende. Certificati, affidabili e attenti alla sostenibilità. Operiamo su Roma e
-              Provincia dal 2015.
+              Facility Management integrato per aziende, enti e condomini. Certificati, affidabili e attenti alla sostenibilità. Dal 2011,
+              con sede a Roma e squadre operative in tutta Italia.
             </p>
             <div className="f-cert">
-              <span className="f-badge">ISO 9001</span>
-              <span className="f-badge">ISO 27001</span>
-              <span className="f-badge">ISO 14001</span>
-              <span className="f-badge">HACCP</span>
+              {certShortList.map((c) => (
+                <span key={c} className="f-badge">
+                  {c}
+                </span>
+              ))}
             </div>
             <div className="f-socials">
               <a href={site.social.facebook} className="f-soc" aria-label="Facebook">fb</a>
@@ -40,6 +42,7 @@ export default function Footer() {
               <Link href="/chi-siamo#mission">Mission &amp; Valori</Link>
               <Link href="/chi-siamo#team">Il Team</Link>
               <Link href="/chi-siamo#certificazioni">Certificazioni</Link>
+              <Link href="/chi-siamo#referenze">Referenze</Link>
               <Link href="/lavora-con-noi">Lavora con Noi</Link>
               <Link href="/blog">Blog</Link>
             </div>
@@ -68,6 +71,8 @@ export default function Footer() {
               <MailIcon />
               <span>
                 <a href={`mailto:${site.email}`}>{site.email}</a>
+                <br />
+                PEC: <a href={`mailto:${site.pec}`}>{site.pec}</a>
               </span>
             </div>
             <div className="f-contact-row">

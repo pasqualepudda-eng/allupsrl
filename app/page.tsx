@@ -16,6 +16,7 @@ import { BoxIcon, ShieldIcon, UsersIcon } from '@/components/icons';
 import JsonLd from '@/components/JsonLd';
 import PageTransition from '@/components/PageTransition';
 import RotatingBadge from '@/components/RotatingBadge';
+import { company, referenceMarquee, yearsActive } from '@/lib/company';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata('/');
@@ -26,13 +27,14 @@ const tickerItems = [
   '✦ Disinfestazione e Derattizzazione',
   'Facchinaggio Professionale',
   '✦ Portierato e Reception',
-  'Oltre 1.500 Clienti Soddisfatti',
+  'Oltre 100 Clienti in 7 Regioni',
   '✦ Servizi di Lavanolo',
   'Manutenzione del Verde',
-  '✦ ISO 9001 · ISO 14001 · HACCP',
+  '✦ ISO 9001 · 14001 · 45001 · 37001',
   'Reperibilità h24',
   '✦ Preventivo Gratuito',
-  'Dal 2015 a Roma',
+  'UNI EN 13549 · SA 8000 · Parità di Genere',
+  '✦ Dal 2011 · Sede a Roma',
 ];
 
 const introFeats = [
@@ -43,21 +45,21 @@ const introFeats = [
   },
   {
     icon: <ShieldIcon />,
-    title: 'Certificazioni ISO 9001, 14001, 27001 e HACCP',
-    text: "Ogni processo è documentato, tracciato e verificabile. La qualità non è un'opinione — è un sistema certificato da enti terzi indipendenti.",
+    title: 'Certificati ISO 9001, 14001, 45001 e 37001',
+    text: 'Qualità, ambiente, sicurezza e anticorruzione verificati da enti terzi indipendenti, insieme a UNI EN 13549 per i servizi di pulizia, SA 8000 e parità di genere.',
   },
   {
     icon: <UsersIcon />,
-    title: 'Team formato, assicurato e reperibile h24',
-    text: 'Oltre 40 professionisti specializzati, disponibili 7 giorni su 7. Pronto intervento garantito per emergenze tecniche e operative.',
+    title: 'Oltre 130 operatori, formati e coordinati',
+    text: 'Squadre locali a Roma, Milano, in Piemonte, Toscana e Marche, formate su sicurezza, antincendio e primo soccorso e coordinate da un unico referente.',
   },
 ];
 
 const stats = [
-  { value: 1500, suffix: '', label: 'Clienti attivi' },
-  { value: 10, suffix: '', label: 'Anni nel settore' },
-  { value: 99, suffix: '', label: '% soddisfatti' },
-  { value: 40, suffix: '', label: 'Professionisti nel team' },
+  { value: company.clients, suffix: '+', label: 'Clienti attivi' },
+  { value: yearsActive, suffix: '', label: 'Anni di attività' },
+  { value: company.squareMeters, suffix: '', label: 'm² di superfici gestite' },
+  { value: company.people, suffix: '+', label: 'Persone nel team' },
 ];
 
 export default function HomePage() {
@@ -96,19 +98,20 @@ export default function HomePage() {
                 from="left"
               >
                 <Reveal className="intro-img-badge" variant="up" delay={0.7}>
-                  <span>★★★★★</span>&nbsp; Oltre <span>1.000 recensioni</span> verificate
+                  <span>✦</span>&nbsp; Scelti dalla <span>FIGC</span> per Roma e Coverciano
                 </Reveal>
               </ImageReveal>
-              <RotatingBadge text="DAL 2015 · ROMA · FACILITY MANAGEMENT · " className="intro-rot" />
+              <RotatingBadge text={`DAL ${company.founded} · ROMA · FACILITY MANAGEMENT · `} className="intro-rot" />
             </div>
             <div>
               <Reveal className="eyebrow" variant="right">
                 Chi siamo
               </Reveal>
-              <SplitText className="s-title">Da oltre 10 anni il partner unico per il tuo patrimonio immobiliare</SplitText>
+              <SplitText className="s-title">Dal 2011 il partner unico per il tuo patrimonio immobiliare</SplitText>
               <Reveal as="p" className="s-text" variant="right" delay={0.15}>
-                AllUp nasce dalla passione per un lavoro fatto bene. Oggi siamo un team di oltre 40 professionisti certificati che ogni giorno
-                curano ambienti, spazi e persone per centinaia di clienti tra privati, aziende e grandi strutture in tutta Roma e dintorni.
+                Nata a Roma nel 2011, AllUp oggi conta circa 140 persone che ogni giorno curano sedi direzionali, uffici, stabilimenti, punti
+                vendita e immobili storici per oltre 100 clienti pubblici e privati, con commesse in sette regioni, dal Lazio alla Valle
+                d&apos;Aosta.
               </Reveal>
               <Stagger className="intro-feats" gap={0.12} delay={0.2}>
                 {introFeats.map((f) => (
@@ -144,8 +147,8 @@ export default function HomePage() {
               di fiducia a Roma
             </SplitText>
             <Reveal as="p" className="s-text" delay={0.15}>
-              Dalla pulizia quotidiana alla sanificazione con ozono, dalla disinfestazione al verde: coordiniamo ogni esigenza del tuo spazio con
-              personale certificato e pronto intervento h24.
+              Dalla pulizia quotidiana alla sanificazione, dalla disinfestazione al verde: coordiniamo ogni esigenza del tuo spazio con personale
+              formato, processi certificati e pronto intervento h24.
             </Reveal>
           </div>
           <ServicesList />
@@ -168,6 +171,26 @@ export default function HomePage() {
 
       <WhyUs />
       <Reviews />
+
+      {/* ══ REFERENZE ══ */}
+      <section className="clients-strip" aria-labelledby="clients-label">
+        <div className="container">
+          <Reveal as="p" className="text-center clients-label" variant="blur">
+            <span id="clients-label">Hanno scelto AllUp</span>
+          </Reveal>
+        </div>
+        <VelocityMarquee baseVelocity={1.6}>
+          {referenceMarquee.map((n) => (
+            <span key={n} className="clients-item">
+              {n} <span className="clients-sep">✦</span>
+            </span>
+          ))}
+        </VelocityMarquee>
+        <Reveal as="p" className="text-center certs-more" delay={0.15}>
+          <Link href="/chi-siamo#referenze">Tutte le referenze →</Link>
+        </Reveal>
+      </section>
+
       <Certifications />
 
       <CtaSection

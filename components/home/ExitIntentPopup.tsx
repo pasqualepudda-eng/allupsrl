@@ -168,9 +168,9 @@ export default function ExitIntentPopup() {
             <div className="ei-trust">
               <span>🔒 ISO 9001</span>
               <span className="ei-trust-sep">·</span>
-              <span>HACCP</span>
+              <span>UNI EN 13549</span>
               <span className="ei-trust-sep">·</span>
-              <span>Dal 2015</span>
+              <span>Dal 2011</span>
               <span className="ei-trust-sep">·</span>
               <span>Roma</span>
             </div>

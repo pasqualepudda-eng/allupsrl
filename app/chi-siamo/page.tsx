@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import CertificateGrid from '@/components/about/CertificateGrid';
 import Timeline from '@/components/about/Timeline';
 import CtaSection from '@/components/CtaSection';
 import Counter from '@/components/fx/Counter';
@@ -6,83 +6,51 @@ import ImageReveal from '@/components/fx/ImageReveal';
 import { Reveal, Stagger, StaggerItem } from '@/components/fx/Reveal';
 import SplitText from '@/components/fx/SplitText';
 import Tilt from '@/components/fx/Tilt';
+import { ShieldCheckIcon, ShieldIcon, UsersIcon } from '@/components/icons';
 import JsonLd from '@/components/JsonLd';
 import PageBanner from '@/components/PageBanner';
 import PageTransition from '@/components/PageTransition';
+import { licenses } from '@/lib/certifications';
+import { company, references, squads, yearsActive } from '@/lib/company';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata('/chi-siamo');
 
+// Valori dichiarati nel Bilancio di Sostenibilità 2025
 const values = [
-  { title: 'Qualità senza compromessi', text: 'Ogni intervento è eseguito seguendo protocolli certificati. Non esiste un "basta così": o è fatto bene o si rifà.' },
-  { title: 'Trasparenza totale', text: 'Preventivi chiari, comunicazione onesta, nessuna sorpresa in fattura. Il cliente sa sempre cosa sta pagando e perché.' },
-  { title: 'Rispetto per le persone', text: 'Rispettiamo i tuoi spazi come fossero nostri. Il team è formato per lavorare in modo discreto, ordinato e professionale.' },
-  { title: 'Sostenibilità ambientale', text: 'Solo prodotti biodegradabili ed eco-certificati. Pulire bene non significa inquinare — è possibile fare entrambe le cose.' },
-];
-
-const team = [
   {
-    name: 'Alessandro Mori',
-    role: 'CEO & Fondatore',
-    img: 'photo-1560250097-0b93528c311a',
-    bio: "Fondatore di AllUp, guida l'azienda con la stessa passione del primo giorno. Esperto di qualità e processi nel cleaning professionale.",
+    title: 'Trasparenza',
+    text: 'Preventivi chiari, comunicazione onesta e risultati rendicontati. Dal 2025 pubblichiamo volontariamente il nostro Bilancio di Sostenibilità.',
   },
   {
-    name: 'Chiara Bianchi',
-    role: 'Operations Manager',
-    img: 'photo-1573497019940-1c28c88b4f3e',
-    bio: 'Coordina il team operativo e garantisce che ogni intervento rispetti i più alti standard qualitativi. Certificata HACCP e ISO.',
+    title: 'Responsabilità',
+    text: "Verso le persone e verso l'ambiente: sicurezza certificata ISO 45001, gestione ambientale ISO 14001 e prodotti concentrati per ridurre plastica e rifiuti.",
   },
   {
-    name: 'Roberto Farina',
-    role: 'Responsabile Sanificazione',
-    img: 'photo-1472099645785-5658abf4ff4e',
-    bio: 'Specialista in trattamenti avanzati: ozono, sanificazione professionale e protocolli post-pandemia. Formazione scientifica e decennale esperienza.',
+    title: 'Integrità',
+    text: 'Un sistema anticorruzione certificato ISO 37001 e i principi di responsabilità sociale SA 8000 e di parità di genere UNI/PdR 125 guidano ogni scelta.',
   },
   {
-    name: 'Laura Conti',
-    role: 'Responsabile Clienti',
-    img: 'photo-1580489944761-15a19d654956',
-    bio: 'Punto di riferimento per ogni cliente. Gestisce le relazioni, i preventivi e si assicura che nessuna richiesta rimanga senza risposta.',
+    title: 'Qualità',
+    text: 'Ogni servizio è progettato, erogato e verificato secondo ISO 9001 e UNI EN 13549, lo standard europeo per la qualità dei servizi di pulizia.',
   },
 ];
 
-const certs = [
+const teamFeats = [
   {
-    img: '/img/iso-9001.svg',
-    alt: 'ISO 9001:2015 Quality Management System Certified',
-    title: 'ISO 9001:2015',
-    text: 'Certificazione internazionale per il sistema di gestione della qualità. Garantisce che ogni processo sia documentato, controllato e migliorato continuamente.',
+    icon: <ShieldIcon />,
+    title: 'Formazione continua',
+    text: "Corsi sulla sicurezza da 8 o 16 ore in base al rischio, antincendio, primo soccorso, lavori in quota, DPI e carrelli elevatori. Ogni anno oltre metà del personale segue un percorso formativo.",
   },
   {
-    img: '/img/iso-27001.svg',
-    alt: 'ISO 27001:2022 Information Security Management System Certified',
-    title: 'ISO 27001:2022',
-    text: 'Certificazione per la sicurezza delle informazioni. Tutti i dati dei nostri clienti vengono trattati e protetti secondo i più rigidi standard internazionali.',
+    icon: <ShieldCheckIcon />,
+    title: 'Sicurezza misurata',
+    text: 'Nel 2025 gli infortuni sono scesi del 67% rispetto all’anno precedente. Monitoriamo i risultati e investiamo in prevenzione e strumenti adeguati.',
   },
   {
-    img: '/img/iso-14001.svg',
-    alt: 'ISO 14001:2015 Environmental Management System Certified',
-    title: 'ISO 14001:2015',
-    text: "Certificazione per il sistema di gestione ambientale. Dimostriamo il nostro impegno concreto nella riduzione dell'impatto ambientale delle nostre attività.",
-  },
-  {
-    img: '/img/haccp.svg',
-    alt: 'HACCP Certified',
-    title: 'HACCP',
-    text: 'Conformità ai protocolli di sicurezza alimentare per la gestione igienica degli ambienti. Indispensabile per ristoranti, hotel e strutture food&beverage.',
-  },
-  {
-    img: '/img/trustpilot.svg',
-    alt: 'Trustpilot 4.9/5',
-    title: 'Trustpilot 4.9/5',
-    text: 'Oltre 1.000 recensioni verificate su Trustpilot e Google. Una reputazione costruita giorno per giorno con il lavoro e la fiducia dei clienti.',
-  },
-  {
-    img: '/img/garanzia.svg',
-    alt: 'Garanzia Happiness',
-    title: 'Garanzia Happiness',
-    text: 'Se non sei soddisfatto del risultato, torniamo a completare il lavoro senza costi aggiuntivi. La tua soddisfazione non è negoziabile.',
+    icon: <UsersIcon />,
+    title: 'Una direzione presente',
+    text: `L'azienda è guidata dall'Amministratore Unico, dott. ${company.ceo}, preposto alla gestione tecnica ai sensi del D.M. 274/97, che già nel Giubileo del 2000 coordinava le pulizie delle strutture ecclesiastiche.`,
   },
 ];
 
@@ -104,35 +72,36 @@ export default function ChiSiamoPage() {
                 Lavoriamo con metodo.
               </SplitText>
               <Reveal as="p" className="s-text mt-3" delay={0.1}>
-                Da oltre dieci anni la nostra missione è semplice: garantire ambienti davvero puliti, igienizzati e sicuri per le persone che li
-                vivono. Non ci accontentiamo dell&apos;apparenza — puntiamo all&apos;igiene reale, quella che protegge la salute.
+                Dal {company.founded} generiamo valore attraverso i nostri servizi, garantendo qualità e attenzione al cliente nel rispetto delle
+                persone, dell&apos;ambiente e del territorio. Operiamo con correttezza e perseguiamo una crescita sostenibile.
               </Reveal>
               <Reveal as="p" className="s-text mt-3" delay={0.2}>
-                Ogni giorno il nostro team di 40 professionisti si impegna per fare la differenza: scegliendo i prodotti giusti, seguendo protocolli
-                certificati e ascoltando le esigenze specifiche di ogni cliente. Perché la cura si vede nei dettagli.
+                Oggi siamo circa 140 persone. Dalla direzione generale di Roma e dalla sede di Ivrea (TO) coordiniamo commesse per oltre{' '}
+                {company.clients} clienti pubblici e privati, circa 955.000 m² di superfici, con un modello fondato su pianificazione,
+                monitoraggio delle performance e ottimizzazione dei processi.
               </Reveal>
               <Stagger className="mission-stats" gap={0.12} delay={0.2}>
                 <StaggerItem variant="zoom">
-                  <Counter className="mission-stat-n" value={10} suffix="+" />
-                  <span className="mission-stat-l">Anni di esperienza</span>
+                  <Counter className="mission-stat-n" value={yearsActive} />
+                  <span className="mission-stat-l">Anni di attività</span>
                 </StaggerItem>
                 <StaggerItem variant="zoom">
-                  <Counter className="mission-stat-n" value={1500} suffix="+" />
-                  <span className="mission-stat-l">Clienti soddisfatti</span>
+                  <Counter className="mission-stat-n" value={company.clients} suffix="+" />
+                  <span className="mission-stat-l">Clienti attivi</span>
                 </StaggerItem>
                 <StaggerItem variant="zoom">
-                  <Counter className="mission-stat-n" value={40} suffix="+" />
-                  <span className="mission-stat-l">Professionisti nel team</span>
+                  <Counter className="mission-stat-n" value={company.people} suffix="+" />
+                  <span className="mission-stat-l">Persone nel team</span>
                 </StaggerItem>
               </Stagger>
             </div>
             <ImageReveal
               className="mission-img"
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80&fit=crop"
-              alt="Il team AllUp al lavoro"
+              alt="Professionisti al lavoro in un ufficio"
               from="right"
             >
-              <div className="mission-img-caption">Il team AllUp — Roma, 2024</div>
+              <div className="mission-img-caption">Facility management dal {company.founded}</div>
             </ImageReveal>
           </div>
         </div>
@@ -148,6 +117,10 @@ export default function ChiSiamoPage() {
               <br />
               ogni nostro intervento
             </SplitText>
+            <Reveal as="p" className="s-text" delay={0.1}>
+              Vogliamo essere un&apos;impresa dinamica e responsabile, capace di integrare innovazione, sostenibilità e qualità gestionale, e
+              attenta agli effetti che il nostro lavoro ha sulle persone, sull&apos;economia e sull&apos;ambiente.
+            </Reveal>
           </div>
           <div className="g4">
             {values.map((v, i) => (
@@ -168,13 +141,13 @@ export default function ChiSiamoPage() {
             <div>
               <Reveal className="eyebrow">La nostra storia</Reveal>
               <SplitText className="s-title">
-                Dal 2015 a oggi:
+                Dal {company.founded} a oggi:
                 <br />
                 una crescita costante
               </SplitText>
               <Reveal as="p" className="s-text mt-3 mb-4" delay={0.1}>
-                Siamo partiti con tre persone e una sola certezza: che la pulizia professionale poteva essere fatta molto meglio. Anno dopo anno,
-                cliente dopo cliente, abbiamo costruito un&apos;azienda di cui andiamo orgogliosi.
+                Siamo nati da un ramo d&apos;azienda di una storica impresa di pulizie nazionale. Da allora abbiamo lavorato per scuole, ministeri,
+                grandi eventi, fondi immobiliari e industrie, crescendo commessa dopo commessa.
               </Reveal>
               <Timeline />
             </div>
@@ -182,10 +155,10 @@ export default function ChiSiamoPage() {
               <ImageReveal
                 className="mission-img"
                 src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&q=80&fit=crop"
-                alt="Sede operativa AllUp"
+                alt="Ufficio direzionale"
                 sizes="(max-width: 1100px) 100vw, 60vw"
               >
-                <div className="mission-img-caption">La sede operativa AllUp</div>
+                <div className="mission-img-caption">Direzione generale a Roma · sede operativa a Ivrea (TO)</div>
               </ImageReveal>
             </div>
           </div>
@@ -197,21 +170,30 @@ export default function ChiSiamoPage() {
         <div className="container">
           <div className="sec-hd">
             <Reveal className="eyebrow">Il team</Reveal>
-            <SplitText className="s-title">Le persone dietro ogni intervento</SplitText>
+            <SplitText className="s-title">Le squadre dietro ogni intervento</SplitText>
             <Reveal as="p" className="s-text" delay={0.1}>
-              Selezionati con cura, formati continuamente, motivati dall&apos;amore per il lavoro ben fatto.
+              Oltre 130 operatori organizzati in squadre locali, coordinati da Roma. Persone formate e seguite, che conoscono gli edifici in cui
+              lavorano ogni giorno.
             </Reveal>
           </div>
-          <Stagger className="team-grid" gap={0.1}>
-            {team.map((m) => (
-              <StaggerItem key={m.name} className="team-card" variant="up">
-                <div className="team-avatar">
-                  <Image src={`https://images.unsplash.com/${m.img}?w=400&q=80&fit=crop`} alt={m.name} fill sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" />
-                  <span className="team-avatar-shine" aria-hidden />
+          <Stagger className="squad-grid" gap={0.08}>
+            {squads.map((sq) => (
+              <StaggerItem key={sq.region} className="squad-card" variant="up">
+                <Counter className="squad-n" value={sq.people} />
+                <span className="squad-unit">operatori</span>
+                <div className="squad-region">{sq.region}</div>
+                <p className="squad-note">{sq.note}</p>
+              </StaggerItem>
+            ))}
+          </Stagger>
+          <Stagger className="squad-feats" gap={0.1}>
+            {teamFeats.map((f) => (
+              <StaggerItem key={f.title} className="feat" variant="up">
+                <div className="feat-icon">{f.icon}</div>
+                <div className="feat-body">
+                  <h4>{f.title}</h4>
+                  <p>{f.text}</p>
                 </div>
-                <div className="team-name">{m.name}</div>
-                <div className="team-role">{m.role}</div>
-                <p className="team-bio">{m.bio}</p>
               </StaggerItem>
             ))}
           </Stagger>
@@ -229,20 +211,58 @@ export default function ChiSiamoPage() {
               è certificata e verificabile
             </SplitText>
             <Reveal as="p" className="s-text" delay={0.1}>
-              Non promettiamo semplicemente eccellenza — la documentiamo. Ogni certificazione è frutto di audit rigorosi e controlli periodici.
+              Non promettiamo semplicemente eccellenza: la documentiamo. Ogni certificato è rilasciato da un ente indipendente, soggetto a
+              sorveglianza annuale e consultabile qui sotto nella sua versione originale.
             </Reveal>
           </div>
-          <div className="cert-list">
-            {certs.map((c, i) => (
-              <Tilt key={c.title} className="cert-card" reveal="zoom" delay={(i % 3) * 0.08}>
-                <div className="cert-card-icon">
-                  <Image src={c.img} alt={c.alt} width={100} height={100} />
+          <CertificateGrid />
+          <Stagger className="cert-licenses" gap={0.1}>
+            {licenses.map((l) => (
+              <StaggerItem key={l.title} className="cert-license" variant="up">
+                <span className="cert-license-mark" aria-hidden>
+                  ✓
+                </span>
+                <div>
+                  <h4>{l.title}</h4>
+                  <p>{l.text}</p>
                 </div>
-                <h4>{c.title}</h4>
-                <p>{c.text}</p>
-              </Tilt>
+              </StaggerItem>
             ))}
+          </Stagger>
+          <Reveal as="p" className="cert-note" delay={0.1}>
+            Puoi verificare la validità di ogni certificato con il codice QR stampato sul documento o contattando direttamente l&apos;ente che
+            l&apos;ha rilasciato.
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ══ REFERENZE ══ */}
+      <section className="section bg-off" id="referenze">
+        <div className="container">
+          <div className="sec-hd">
+            <Reveal className="eyebrow">Referenze</Reveal>
+            <SplitText className="s-title">
+              Chi ci ha scelto
+              <br />
+              e continua a farlo
+            </SplitText>
+            <Reveal as="p" className="s-text" delay={0.1}>
+              Fondi immobiliari, banche, istituzioni e industrie: committenti che ci affidano sedi direzionali, stabilimenti, punti vendita e
+              immobili storici, spesso da molti anni.
+            </Reveal>
           </div>
+          <Stagger className="ref-grid" gap={0.1}>
+            {references.map((r) => (
+              <StaggerItem key={r.group} className="ref-group" variant="up">
+                <h3>{r.group}</h3>
+                <ul className="ref-names">
+                  {r.names.map((n) => (
+                    <li key={n}>{n}</li>
+                  ))}
+                </ul>
+              </StaggerItem>
+            ))}
+          </Stagger>
         </div>
       </section>
 

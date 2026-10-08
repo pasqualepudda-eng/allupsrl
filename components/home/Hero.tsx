@@ -8,6 +8,8 @@ import Magnetic from '@/components/fx/Magnetic';
 import SplitWords from '@/components/fx/SplitWords';
 import { NetworkCanvas } from '@/components/fx/canvas';
 import { ShieldIcon, StarLogo } from '@/components/icons';
+import { certifications } from '@/lib/certifications';
+import { company, yearsActive } from '@/lib/company';
 
 const phrases = ['gestito con intelligenza.', 'in mani esperte.', 'senza pensieri.', 'valorizzato ogni giorno.'];
 const d = (s: number) => ({ '--d': `${s}s` }) as CSSProperties;
@@ -130,9 +132,9 @@ function HeroVisual() {
               <span>MR</span>
               <span>GF</span>
               <span>LA</span>
-              <span className="is-more">+40</span>
+              <span className="is-more">+{company.people}</span>
             </div>
-            <div className="hv-small">Pronto intervento h24 · Roma e Provincia</div>
+            <div className="hv-small">Squadre a Roma, Milano, Piemonte, Toscana e Marche</div>
           </div>
         </div>
       </motion.div>
@@ -140,12 +142,15 @@ function HeroVisual() {
       <motion.div className="hv-card hv-card--cert" style={near}>
         <div className="intro-in" style={d(0.85)}>
           <div className="hv-card-body anim-float" style={{ animationDelay: '-3s' }}>
-            <div className="hv-stars">★★★★★ <b>4.9</b></div>
+            <div className="hv-stars">
+              ✦<b>{certifications.length} certificazioni e attestazioni</b>
+            </div>
             <div className="hv-chips">
               <span>ISO 9001</span>
               <span>ISO 14001</span>
-              <span>ISO 27001</span>
-              <span>HACCP</span>
+              <span>ISO 45001</span>
+              <span>ISO 37001</span>
+              <span>UNI EN 13549</span>
             </div>
           </div>
         </div>
@@ -180,7 +185,7 @@ export default function Hero() {
           <div className="hero-inner">
             <motion.div className="hero-content" style={{ y: contentY, opacity: contentOpacity }}>
               <div className="hero-eyebrow intro-in" style={d(0)}>
-                Facility Management Integrato · Dal 2015
+                Facility Management Integrato · Dal {company.founded}
               </div>
               <h1 className="hero-h1">
                 <span className="sr-only">Il tuo edificio, gestito con intelligenza.</span>
@@ -216,12 +221,12 @@ export default function Hero() {
         <div className="container">
           <div className="hero-stats-inner">
             <div className="h-stat">
-              <Counter className="h-stat-n" value={10} suffix="+" />
-              <span className="h-stat-l">Anni di esperienza</span>
+              <Counter className="h-stat-n" value={yearsActive} />
+              <span className="h-stat-l">Anni di attività</span>
             </div>
             <div className="h-stat">
-              <Counter className="h-stat-n" value={1500} suffix="+" />
-              <span className="h-stat-l">Clienti soddisfatti</span>
+              <Counter className="h-stat-n" value={company.clients} suffix="+" />
+              <span className="h-stat-l">Clienti attivi</span>
             </div>
             <div className="h-stat">
               <Counter className="h-stat-n" value={7} />

@@ -57,13 +57,13 @@ export const services: Service[] = [
     num: '02',
     title: 'Pulizie Civili ed Industriali',
     short:
-      'Pulizie professionali per uffici, condomini, ospedali, scuole e stabilimenti. Protocolli HACCP e piani personalizzati.',
+      'Pulizie professionali per uffici, condomini, punti vendita e stabilimenti. Qualità certificata UNI EN 13549 e piani personalizzati.',
     modal: {
       tag: 'Servizio Base',
-      lead: 'Pulizie professionali per ogni tipo di ambiente: condomini, uffici, ospedali, scuole, centri commerciali e stabilimenti produttivi. Protocolli HACCP rigorosi, personale formato e piani di pulizia su misura per ogni cliente.',
+      lead: 'Pulizie professionali per ogni tipo di ambiente: sedi direzionali, uffici, condomini, punti vendita, centri commerciali e stabilimenti produttivi. Servizi certificati UNI EN 13549, personale formato e piani di pulizia su misura per ogni cliente.',
       bullets: [
         'Pulizie ordinarie e straordinarie',
-        'Protocolli HACCP certificati',
+        'Qualità certificata UNI EN 13549',
         'Cere, cristallizzazioni e trattamenti pavimenti',
         'Pulizie post-cantiere e post-evento',
         'Sanificazione di uffici e ambienti di lavoro',
@@ -74,12 +74,12 @@ export const services: Service[] = [
     },
     detail: {
       tag: 'Core business',
-      lead: "Dalla pulizia quotidiana di un appartamento alla bonifica di un capannone industriale: gestiamo ogni tipologia di intervento con la stessa cura e lo stesso rigore professionale. Protocolli HACCP certificati, prodotti biodegradabili ad alta efficacia e attrezzature professionali per ogni superficie. Ordine e igiene garantiti, sempre.",
+      lead: "Dalla pulizia quotidiana di un appartamento alla bonifica di un capannone industriale: gestiamo ogni tipologia di intervento con la stessa cura e lo stesso rigore professionale. Processi certificati ISO 9001 e UNI EN 13549, prodotti concentrati che riducono plastica e rifiuti e attrezzature professionali per ogni superficie. Ordine e igiene garantiti, sempre.",
       bullets: [
         'Pulizia appartamenti, ville e condomini',
         'Uffici, showroom e centri commerciali',
         'Hotel e strutture ricettive (5 stelle)',
-        'Strutture sanitarie (protocollo HACCP)',
+        'Supermercati e punti vendita',
         'Magazzini e stabilimenti industriali',
         'Pulizia post-cantiere e post-trasloco',
         'Scuole, palestre e centri sportivi',
@@ -87,7 +87,7 @@ export const services: Service[] = [
       ],
       image: img('photo-1581578731548-c64695cc6952'),
       alt: 'Pulizie civili ed industriali',
-      badge: '✓ Protocolli HACCP certificati',
+      badge: '✓ Certificati UNI EN 13549 · ISO 9001',
     },
   },
   {
@@ -125,7 +125,7 @@ export const services: Service[] = [
       ],
       image: img('photo-1558618666-fcd25c85cd64'),
       alt: 'Disinfestazione e derattizzazione professionale',
-      badge: '✓ Tecnica IPM · Prodotti biocidi certificati',
+      badge: '✓ Impresa abilitata D.M. 274/97 · Tecnica IPM',
     },
   },
   {

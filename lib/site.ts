@@ -4,11 +4,12 @@ export const site = {
   phone: '+39 0670496958',
   phoneHref: 'tel:+390670496958',
   email: 'amministrazione@allupsrl.it',
+  pec: 'allupsrl@arubapec.it',
   address: 'Via Lusitania, 4, 00183 Roma RM',
   // Numero usato dai form (già presente in script.js): unico punto da aggiornare
   whatsapp: '393514181029',
   legalLine:
-    '© Copyright 2026 AllUp S.r.l. · Via Lusitania, 4, 00183 Roma RM · Reg. Imprese Roma (C.C.I.A.A.) n° 1296094 · P.IVA 11346621003 · Capitale sociale € 10.000',
+    '© Copyright 2026 ALL UP S.r.l. · Via Lusitania, 4, 00183 Roma RM · C.F. e P.IVA 11346621003 · REA RM-1296094 · Capitale sociale € 10.000 i.v.',
   social: {
     facebook: '#',
     instagram: '#',
@@ -33,6 +34,7 @@ export const nav: NavItem[] = [
       { label: 'Il Team', href: '/chi-siamo#team' },
       'sep',
       { label: 'Certificazioni', href: '/chi-siamo#certificazioni' },
+      { label: 'Referenze', href: '/chi-siamo#referenze' },
     ],
   },
   {

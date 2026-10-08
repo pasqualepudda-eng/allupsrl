@@ -26,8 +26,8 @@ const feats: { icon: ReactNode; title: string; text: string }[] = [
   },
   {
     icon: <PinIcon />,
-    title: 'Disponibili in tutta Roma',
-    text: 'Operiamo su Roma e Provincia. Interveniamo presso la tua sede, a domicilio o in qualsiasi struttura commerciale.',
+    title: 'Da Roma a tutta Italia',
+    text: "Direzione generale a Roma e sede a Ivrea (TO): coordiniamo commesse in Lazio, Lombardia, Piemonte, Valle d'Aosta, Toscana, Marche ed Emilia-Romagna.",
   },
 ];
 

@@ -41,8 +41,8 @@ export default function ServiziPage() {
               la qualità AllUp
             </SplitText>
             <Reveal as="p" className="s-text" delay={0.1}>
-              Ogni servizio è erogato da personale qualificato, con protocolli certificati ISO 9001 e HACCP, prodotti omologati e attrezzature
-              professionali. Dalla residenza privata alla grande struttura industriale.
+              Ogni servizio è erogato da personale qualificato, con sistemi di gestione certificati ISO 9001, ISO 14001 e ISO 45001, pulizie
+              certificate UNI EN 13549, prodotti omologati e attrezzature professionali. Dal condominio alla grande struttura industriale.
             </Reveal>
           </div>
           <Stagger className="srv-pills" gap={0.06} delay={0.15}>

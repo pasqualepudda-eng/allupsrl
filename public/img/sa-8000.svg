@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 185" width="160" height="185">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#78350F" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <polygon points="80,5 154,46 154,139 80,180 6,139 6,46" fill="url(#bg)" filter="url(#sh)"/>
+  <polygon points="80,13 146,51 146,134 80,172 14,134 14,51" fill="none" stroke="rgba(253,230,138,0.14)" stroke-width="1.5"/>
+  <circle cx="70" cy="31" r="5" fill="rgba(253,230,138,0.2)" stroke="rgba(253,230,138,0.6)" stroke-width="1.5"/>
+  <circle cx="90" cy="31" r="5" fill="rgba(253,230,138,0.2)" stroke="rgba(253,230,138,0.6)" stroke-width="1.5"/>
+  <path d="M60,50 Q60,39 70,39 Q80,39 80,50 Z" fill="rgba(253,230,138,0.2)" stroke="rgba(253,230,138,0.6)" stroke-width="1.5"/>
+  <path d="M80,50 Q80,39 90,39 Q100,39 100,50 Z" fill="rgba(253,230,138,0.2)" stroke="rgba(253,230,138,0.6)" stroke-width="1.5"/>
+  <rect x="58.0" y="58" width="44" height="16" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <text x="80" y="69.5" font-family="Arial Black, Arial, sans-serif" font-size="10" font-weight="900" fill="white" text-anchor="middle" letter-spacing="4">SA</text>
+  <text x="80" y="107" font-family="Arial Black, Arial, sans-serif" font-size="40" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-1">8000</text>
+  <text x="80" y="121" font-family="Arial, sans-serif" font-size="9.5" font-weight="600" fill="rgba(253,230,138,0.7)" text-anchor="middle" letter-spacing="2">:2014</text>
+  <line x1="40" y1="133" x2="120" y2="133" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="80" y="146" font-family="Arial, sans-serif" font-size="6.5" font-weight="700" fill="rgba(253,230,138,0.65)" text-anchor="middle" letter-spacing="1.5">SOCIAL ACCOUNTABILITY</text>
+  <rect x="40" y="154" width="80" height="14" rx="7" fill="#FDE68A"/>
+  <text x="80" y="164.5" font-family="Arial Black, Arial, sans-serif" font-size="6.5" font-weight="900" fill="#78350F" text-anchor="middle" letter-spacing="1.5">CONFORMITÀ</text>
+</svg>

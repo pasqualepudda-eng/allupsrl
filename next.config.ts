@@ -2,7 +2,8 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   // In sviluppo il sito si apre anche da telefono/altri dispositivi sulla rete locale
-  allowedDevOrigins: ['172.20.10.*', '192.168.*.*', '10.*.*.*', '*.local'],
+  // (127.0.0.1 compreso: senza, aprendo il sito da quell'indirizzo gli script vengono bloccati e i testi animati restano invisibili)
+  allowedDevOrigins: ['127.0.0.1', 'localhost', '172.20.10.*', '192.168.*.*', '10.*.*.*', '*.local'],
 
   images: {
     // Unsplash ridimensiona le immagini on-the-fly: niente quota di ottimizzazione Vercel

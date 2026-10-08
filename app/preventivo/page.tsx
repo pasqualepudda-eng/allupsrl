@@ -20,7 +20,7 @@ const benefits = [
 
 const reasons = [
   { icon: '⚡', title: 'Intervento rapido', text: 'Per urgenze, garantiamo sopralluogo o intervento entro 24 ore dalla richiesta, su tutto il territorio di Roma e Provincia.' },
-  { icon: '🏅', title: 'Qualità certificata ISO 9001', text: 'Ogni nostro intervento segue protocolli documentati e verificati da ente terzo. Non solo promesse, ma procedure reali.' },
+  { icon: '🏅', title: 'Qualità certificata ISO 9001 e UNI EN 13549', text: 'Ogni nostro intervento segue processi documentati e verificati ogni anno da un ente terzo. Non solo promesse, ma procedure reali.' },
   { icon: '🌿', title: 'Prodotti sicuri e green', text: "Utilizziamo solo detergenti biodegradabili ed eco-certificati. Sicuri per bambini, animali domestici e l'ambiente." },
   { icon: '🔒', title: 'Team assicurato e verificato', text: 'Ogni professionista è selezionato, formato e coperto da polizza assicurativa. Lavoriamo con totale discrezione e rispetto.' },
   { icon: '💰', title: 'Nessun costo nascosto', text: 'Il preventivo che ricevi è definitivo. Nessuna voce aggiuntiva, nessuna sorpresa in fattura, mai.' },

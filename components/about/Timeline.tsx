@@ -3,31 +3,47 @@
 import { motion, useScroll, useSpring } from 'motion/react';
 import { useRef } from 'react';
 
+// Fonte: presentazione aziendale (marzo 2026), visura camerale e certificati
 const steps = [
   {
-    year: '2015',
+    year: '2011',
     title: 'La fondazione',
-    text: 'AllUp nasce a Roma con un piccolo team di tre persone e il desiderio di rivoluzionare i servizi di pulizia per i privati.',
+    text: "Nasce a Roma Nettoyage S.r.l., da un ramo d'azienda di una storica impresa di pulizie nazionale. Primo grande incarico: gli istituti scolastici delle province di Ragusa, Palermo e Trapani, con circa 300 operatori.",
+  },
+  {
+    year: '2014',
+    title: 'Nasce ALL UP',
+    text: 'Conclusa la commessa siciliana e incassati tutti i crediti, la società si consolida, gestisce un parcheggio nel centro storico di Catania e cambia nome in ALL UP S.r.l., tornando a concentrarsi sui servizi di pulizia.',
+  },
+  {
+    year: '2015',
+    title: 'Expo Milano 2015',
+    text: "Il nostro software gestionale per pianificare e monitorare le pulizie viene giudicato un elemento di eccellenza nella gara per il lotto principale di Expo. A noi accoglienza, presidio e pulizia di Palazzo Italia e dei Manufatti del Cardo.",
+  },
+  {
+    year: '2016',
+    title: 'Clienti diretti',
+    text: "Proseguiamo con contratti diretti per il Ministero del Lavoro (uffici del Ministro), Credito Fondiario, Beni Stabili e SDA. A Milano curiamo l'approntamento delle auto a noleggio per Avis Budget.",
   },
   {
     year: '2017',
-    title: 'Prima certificazione ISO 9001',
-    text: 'Otteniamo la certificazione ISO 9001:2015, formalizzando i protocolli di qualità che già seguivamo. Il team cresce a 12 persone.',
+    title: 'Il real estate',
+    text: 'Arrivano fondi e società di gestione immobiliare: Covivio, Investire SGR, BNP Paribas Real Estate, Cushman & Wakefield, Colliers, Kryalos SGR e molti altri, insieme a banche, enti e studi professionali.',
   },
   {
-    year: '2019',
-    title: 'Apertura al mercato B2B',
-    text: 'Lanciamo la divisione aziendale: uffici, hotel, condomini. La clientela business supera quella privata per volumi.',
-  },
-  {
-    year: '2021',
-    title: 'Introduzione del trattamento a ozono',
-    text: "In risposta alla pandemia, investiamo in tecnologie di sanificazione avanzata. Il trattamento all'ozono diventa uno dei nostri servizi più richiesti.",
+    year: '2023',
+    title: 'Qualità certificata',
+    text: "Otteniamo la certificazione ISO 9001:2015. Nel 2024 arriva l'asseverazione del modello di gestione della salute e sicurezza (D.Lgs. 81/08, art. 30).",
   },
   {
     year: '2025',
-    title: 'Oggi: 40 professionisti, 1.500+ clienti',
-    text: 'Un team solido, una reputazione costruita sulla fiducia. Continuiamo a crescere rimanendo fedeli ai valori che ci hanno sempre guidati.',
+    title: 'FIGC, Giubileo e nuove certificazioni',
+    text: 'Dal 1° agosto curiamo le sedi FIGC di Roma e il Centro Tecnico Federale di Coverciano. Lavoriamo per il Giubileo e otteniamo ISO 14001, ISO 45001, ISO 37001, SA 8000 e la certificazione per la parità di genere.',
+  },
+  {
+    year: '2026',
+    title: 'Oggi',
+    text: 'Circa 140 persone, oltre 100 clienti in sette regioni, una sede a Ivrea (TO) e la certificazione UNI EN 13549 sulla qualità dei servizi di pulizia. Il prossimo traguardo: diventare Società Benefit.',
   },
 ];
 

@@ -133,11 +133,7 @@ a, button, [role="button"], label, summary { -webkit-tap-highlight-color: transp
 
 /* ════════ SMARTPHONE ════════ */
 @media (max-width: 600px) {
-  /* Team e certificazioni su due colonne: la pagina si accorcia della metà */
-  .team-grid { grid-template-columns: 1fr 1fr; gap: 1.6rem .9rem; }
-  .team-name { font-size: .92rem; }
-  .team-role { font-size: .66rem; letter-spacing: .5px; }
-  .team-bio { font-size: .76rem; }
+  /* Certificazioni su due colonne: la pagina si accorcia della metà */
   .cert-list { grid-template-columns: 1fr 1fr; gap: .8rem; }
   .cert-card { padding: 1.2rem .9rem; }
   .cert-card-icon img { width: 70px; height: auto; }
@@ -152,5 +148,5 @@ a, button, [role="button"], label, summary { -webkit-tap-highlight-color: transp
 @media (max-width: 380px) {
   .topbar-live { display: none; }
   .hero-h1 { font-size: 2.6rem; }
-  .team-grid, .cert-list { grid-template-columns: 1fr; }
+  .cert-list { grid-template-columns: 1fr; }
 }

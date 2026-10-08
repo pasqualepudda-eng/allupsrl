@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 185" width="160" height="185">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <polygon points="80,5 154,46 154,139 80,180 6,139 6,46" fill="url(#bg)" filter="url(#sh)"/>
+  <polygon points="80,13 146,51 146,134 80,172 14,134 14,51" fill="none" stroke="rgba(203,213,225,0.14)" stroke-width="1.5"/>
+  <path d="M80,20 L96,27 L96,39 Q96,50 80,55 Q64,50 64,39 L64,27 Z" fill="rgba(203,213,225,0.15)" stroke="rgba(203,213,225,0.5)" stroke-width="1.5"/>
+  <path d="M72,38 L78,44 L89,32" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="42.0" y="58" width="76" height="16" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <text x="80" y="69.5" font-family="Arial Black, Arial, sans-serif" font-size="9" font-weight="900" fill="white" text-anchor="middle" letter-spacing="1.5">D.LGS. 81/08</text>
+  <text x="80" y="107" font-family="Arial Black, Arial, sans-serif" font-size="26" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-1">ART. 30</text>
+  <text x="80" y="121" font-family="Arial, sans-serif" font-size="9.5" font-weight="600" fill="rgba(203,213,225,0.7)" text-anchor="middle" letter-spacing="2">SGSL UNI-INAIL</text>
+  <line x1="40" y1="133" x2="120" y2="133" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="80" y="146" font-family="Arial, sans-serif" font-size="6.5" font-weight="700" fill="rgba(203,213,225,0.65)" text-anchor="middle" letter-spacing="1.5">MODELLO DI GESTIONE</text>
+  <rect x="40" y="154" width="80" height="14" rx="7" fill="#E2E8F0"/>
+  <text x="80" y="164.5" font-family="Arial Black, Arial, sans-serif" font-size="6.5" font-weight="900" fill="#0F172A" text-anchor="middle" letter-spacing="1.5">ASSEVERATO</text>
+</svg>
