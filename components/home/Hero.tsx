@@ -7,7 +7,8 @@ import Counter from '@/components/fx/Counter';
 import Magnetic from '@/components/fx/Magnetic';
 import SplitWords from '@/components/fx/SplitWords';
 import { NetworkCanvas } from '@/components/fx/canvas';
-import { ShieldIcon, StarLogo } from '@/components/icons';
+import Image from 'next/image';
+import { ShieldIcon } from '@/components/icons';
 import { certifications } from '@/lib/certifications';
 import { company, yearsActive } from '@/lib/company';
 
@@ -88,9 +89,9 @@ function HeroVisual() {
   return (
     <motion.div className="hero-visual" style={{ rotateX, rotateY, transformPerspective: 1200 }} aria-hidden>
       <div className="hv-glow" />
-      <motion.div className="hv-star" style={far}>
+      <motion.div className="hv-mark" style={far}>
         <div className="intro-in" style={d(0.5)}>
-          <StarLogo />
+          <Image src="/img/allup-mark.png" alt="" width={150} height={119} />
         </div>
       </motion.div>
 

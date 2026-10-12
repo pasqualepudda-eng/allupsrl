@@ -102,9 +102,9 @@ html[data-intro="seen"] { --intro-delay: 0.05s; }
   backdrop-filter: saturate(1.6) blur(14px);
   border-bottom-color: rgba(226,224,221,.6);
 }
-.logo-icon { animation: pulse-glow 3.5s ease-in-out infinite; transition: transform .3s cubic-bezier(.34,1.56,.64,1); }
-.site-logo:hover .logo-icon svg { animation: spin-slow 1.6s cubic-bezier(.65,0,.35,1); }
-.header.scrolled .logo-icon { transform: scale(.9); }
+.site-logo-img { transform-origin: left center; transition: transform .3s cubic-bezier(.34,1.56,.64,1); }
+.site-logo:hover .site-logo-img { transform: scale(1.04); }
+.header.scrolled .site-logo-img { transform: scale(.9); }
 
 .nav-link { position: relative; background: none !important; isolation: isolate; }
 .nav-link-text { position: relative; z-index: 1; }
@@ -160,7 +160,6 @@ html[data-intro="seen"] { --intro-delay: 0.05s; }
 .mob-menu-foot .mob-wa svg { fill: #25D366; stroke: none; }
 .header:has(+ .mob-menu) .burger span { background: var(--white); }
 .header:has(+ .mob-menu) { background: var(--dark); border-bottom-color: rgba(255,255,255,.08); }
-.header:has(+ .mob-menu) .logo-name { color: var(--white); }
 
 /* ── Cursore personalizzato ── */
 html.has-cursor, html.has-cursor body, html.has-cursor a, html.has-cursor button,
@@ -200,15 +199,8 @@ html[data-intro="seen"] .preloader { display: none; }
   animation: pl-up .8s var(--ease-in-out-quart) 1.3s both;
 }
 .preloader-center { width: min(340px, 80vw); animation: pl-fade .4s ease 1.2s both; }
-.preloader-logo {
-  width: 54px; height: 54px; border-radius: 12px; background: var(--orange);
-  display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem;
-  animation: pl-pop .7s cubic-bezier(.34,1.56,.64,1) both;
-}
-.preloader-logo svg { width: 28px; height: 28px; fill: #fff; animation: spin-slow 1.4s var(--ease-in-out-quart) .15s both; }
-.preloader-word { display: flex; font-size: 3rem; font-weight: 900; letter-spacing: -1.5px; color: #fff; line-height: 1; overflow: hidden; }
-.preloader-word span { display: inline-block; animation: word-up .7s var(--ease-out-expo) both; }
-.preloader-word .is-accent { color: var(--orange); }
+.preloader-brand { overflow: hidden; padding-bottom: .2rem; }
+.preloader-logo-img { display: block; width: min(270px, 100%); height: auto; animation: word-up .8s var(--ease-out-expo) .1s both; }
 .preloader-bar { margin-top: 1.4rem; height: 2px; background: rgba(255,255,255,.1); overflow: hidden; border-radius: 2px; }
 .preloader-bar span { display: block; height: 100%; background: var(--orange); transform-origin: left; animation: pl-bar 1.15s cubic-bezier(.65,0,.35,1) both; }
 .preloader-meta { display: flex; justify-content: space-between; margin-top: .7rem; font-size: .7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,.45); font-variant-numeric: tabular-nums; }

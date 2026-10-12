@@ -1,4 +1,4 @@
-import { StarLogo } from '@/components/icons';
+import Image from 'next/image';
 
 /** Bollino con testo circolare che ruota lentamente */
 export default function RotatingBadge({ text, className = '' }: { text: string; className?: string }) {
@@ -14,7 +14,7 @@ export default function RotatingBadge({ text, className = '' }: { text: string; 
         </text>
       </svg>
       <span className="rot-badge-core">
-        <StarLogo />
+        <Image src="/img/allup-mark.png" alt="" width={28} height={22} />
       </span>
     </div>
   );

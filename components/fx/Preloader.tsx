@@ -2,6 +2,7 @@
 
 import { animate } from 'motion/react';
 import { useEffect, useRef, useState } from 'react';
+import Logo from '@/components/Logo';
 import { INTRO_KEY } from '@/lib/intro';
 
 /**
@@ -46,17 +47,8 @@ export default function Preloader() {
       <div className="preloader-panel preloader-panel--orange" />
       <div className="preloader-panel preloader-panel--dark">
         <div className="preloader-center">
-          <div className="preloader-logo">
-            <svg viewBox="0 0 24 24">
-              <path d="M12 2L13.09 8.26L19 6L15.45 11.25L21 13.5L15.36 14.9L17 21L12 17.27L7 21L8.64 14.9L3 13.5L8.55 11.25L5 6L10.91 8.26L12 2Z" />
-            </svg>
-          </div>
-          <div className="preloader-word">
-            {'AllUp'.split('').map((c, i) => (
-              <span key={i} style={{ animationDelay: `${0.15 + i * 0.06}s` }} className={i >= 3 ? 'is-accent' : ''}>
-                {c}
-              </span>
-            ))}
+          <div className="preloader-brand">
+            <Logo className="preloader-logo-img" height={96} eager />
           </div>
           <div className="preloader-bar">
             <span />

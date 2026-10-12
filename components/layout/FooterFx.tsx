@@ -19,7 +19,7 @@ export function FooterMark() {
   return (
     <div ref={ref} className="footer-mark" aria-hidden>
       <motion.span className="footer-mark-text" style={{ x, backgroundImage, WebkitTextStrokeColor }}>
-        AllUp
+        allup
       </motion.span>
     </div>
   );

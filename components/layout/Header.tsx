@@ -6,7 +6,8 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Magnetic from '@/components/fx/Magnetic';
 import { useScrollLock } from '@/components/fx/useScrollLock';
-import { ChevronDown, MailIcon, PhoneIcon, StarLogo, WhatsAppIcon } from '@/components/icons';
+import { ChevronDown, MailIcon, PhoneIcon, WhatsAppIcon } from '@/components/icons';
+import Logo from '@/components/Logo';
 import { nav, site, waLink } from '@/lib/site';
 
 const isActive = (pathname: string, href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href));
@@ -52,15 +53,7 @@ export default function Header() {
       >
         <div className="container nav-inner">
           <Link href="/" className="site-logo" aria-label="AllUp — Home">
-            <div className="logo-icon">
-              <StarLogo />
-            </div>
-            <div className="logo-text-wrap">
-              <span className="logo-name">
-                All<em>Up</em>
-              </span>
-              <span className="logo-sub">Facility Management</span>
-            </div>
+            <Logo className="site-logo-img" height={46} eager />
           </Link>
 
           <LayoutGroup id="main-nav">

@@ -89,12 +89,6 @@ export const ArrowUp = (p: P) => (
   </svg>
 );
 
-export const StarLogo = (p: P) => (
-  <svg viewBox="0 0 24 24" {...p}>
-    <path d="M12 2L13.09 8.26L19 6L15.45 11.25L21 13.5L15.36 14.9L17 21L12 17.27L7 21L8.64 14.9L3 13.5L8.55 11.25L5 6L10.91 8.26L12 2Z" />
-  </svg>
-);
-
 export const ClockIcon = (p: P) => (
   <svg viewBox="0 0 24 24" {...p}>
     <circle cx="12" cy="12" r="10" />

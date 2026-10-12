@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Stagger, StaggerItem } from '@/components/fx/Reveal';
 import { MailIcon, PhoneIcon, PinIcon } from '@/components/icons';
 import CookieSettingsButton from '@/components/consent/CookieSettingsButton';
+import Logo from '@/components/Logo';
 import { certShortList } from '@/lib/certifications';
 import { nav, site, waLink } from '@/lib/site';
 import { BackToTop, FooterMark } from './FooterFx';
@@ -14,9 +15,9 @@ export default function Footer() {
       <div className="container footer-top">
         <Stagger className="footer-grid" gap={0.1}>
           <StaggerItem className="footer-brand">
-            <span className="f-logo">
-              All<em>Up</em>
-            </span>
+            <Link href="/" className="f-logo" aria-label="AllUp — Home">
+              <Logo height={50} />
+            </Link>
             <p className="f-desc">
               Facility Management integrato per aziende, enti e condomini. Certificati, affidabili e attenti alla sostenibilità. Dal 2011,
               con sede a Roma e squadre operative in tutta Italia.
